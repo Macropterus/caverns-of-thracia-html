@@ -1,0 +1,470 @@
+<html>
+	<head>
+		<title>Level 1 - Caverns of Thracia</title>
+		<style>
+
+.splitter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#separator {
+    cursor: col-resize;
+    background-color: #aaa;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='30'><path d='M2 0 v30 M5 0 v30 M8 0 v30' fill='none' stroke='black'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+    height: 100%;
+
+    /* Prevent the browser's built-in drag from interfering */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#first {
+    background-color: #dde;
+    width: 30%;
+    height: 100%;
+    min-width: 10px;
+	overflow: scroll;
+}
+
+#second {
+    background-color: #fff;
+    width: 70%;
+    height: 100%;
+    min-width: 10px;
+	overflow: scroll
+}
+
+#top-button-row {
+	position: fixed;
+	
+}
+
+#zoom-buttons {
+	position: fixed;
+	right: 10px;
+	
+}
+
+.top-button {
+	background-color: #5081a9;
+	border: none;
+	color: white;
+	padding: 8px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.zoom-button {
+	background-color: #5081a9;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.room {
+	background-color: mintcream;
+}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="splitter">
+			<div id="first">
+				
+				<h1>Level One</h1>
+				<div id="1" class="room">
+				<p><strong>1) Entry Hall:</strong> The stairs out of this room or down to this room lead to the surface and come out among a pile of ruins. The walls of this room appear to have been painted once in bright colors with scenes of ceremonies and worship, however now they are faded, worn, chipped and discolored with age and wear. The air in the room stinks of bat guano and hanging from the ceiling are several hundred normal bats. The ceiling, which is 30 high, is covered with them. The bats will be mildly irritated by torches but a <em>Light</em> spell will send them winging about through the air, severely agitated. The guano on the floor makes it slippery and will require a saving throw on a d20 of under the characters Dexterity +2 per turn spent running through the muck or per round spent fighting in it. Failure to make the throw indicates slipping and falling into the goo (-3 Charisma penalty).</p>
+				</div><div id="2" class="room">
+				<p><strong>2) Hall of the Bats:</strong> This is a columned hall that has at least 6 - 8 of bat guano on the floor. The 20 ceiling is literally swarming with normal bats who will become agitated by the presence of light and <em>Light</em> spells or bright, directional lanterns will send the critters winging and make vision beyond 5 impossible due to their number. Running or fighting in this room will require a saving throw to be made against slippage (see Room 1 above), however, saving throws will be made at Dexterity -2.</p>
+				</div><div id="3" class="room">
+				<p><strong>3) Alcove of the Bats:</strong> This room is exactly like Room 2 as far as bats are concerned (including saving throws). At the north end of the alcove is a pile of rubble that appears to have once been a statue of some sort. If the rubble is dug through (approximately 1 turn) the head can be found. It will be the head of the goddess Athena. The door into Room 5 is ajar and the door to Room 4 is jammed shut
+				so that it is -1 on opening capability. If characters choose to notice, they will find that it appears that trails have been worn through the muck on the floor, leading to both Rooms 4 and 5 and into and through Rooms 2 and 1.</p>
+				</div><div id="4" class="room">
+				<p><strong>4) Centipede Chapel:</strong> This room is not full of bat guano. It contains a pile of rubble that appears to once have been a winged, robed, female figure (imagine the statue winged victory in a heap). Crawling about the room are 19 centipedes, bright red in color, AC: 9, HD: ¼, Damage: Poison (+4 saving throw), HP: 1 (x9), 2 (x10). There has been a recent struggle in the room. Several additional centipedes lie mashed on the floor (currently being hastily cleaned up by their still living fellows) and some blood has been spilled.</p>
+				</div><div id="5" class="room">
+				<p><strong>5) Lizard Men on a Hunting Foray:</strong> 4 Lizard Men are in here, AC: 4, Move: 6, HD: 2 + 1, Damage: club for 1 - 8, HP: 13, 9, 16, 8 (13). Two of the Lizard Men are on guard and ready while the 3rd is seeing to the wounds of the 4th who, though he can fight, is reeling somewhat from the effects of centipede poison. (The 13 reflects the creatures actual hit points before suffering damage from the centipedes.) On the floor is a string of about 12 centipedes with their heads removed. Several are still wriggling, coiling and uncoiling. 2 centepedes have already been cracked open and the meat devoured out of them. The wounded Lizard Man will fight at -1 hit probability.<br />
+				Scattered about the floor are the remains of a statue that is shattered beyond any recognition. The secret door at the rear of the room is disguised to look like an ornamental panel.</p>
+				</div><div id="6" class="room">
+				<p><strong>6) Spear Trap:</strong> As the location of the 6 is passed on the map, there is a 1 - 4 chance on a d6 that 2 spears will come flying out of the south wall, headed north and hit as if cast by a 7th level fighter. There is a 25% chance that the Gnoll guard, AC: 5, HD: 2, HP: 13, Weapon: Morning Star, will be dozing at point g. If he hears approaching adventurers, he will slip into Room 7 and the Gnolls in there will have an ambush ready.</p>
+				</div><div id="7" class="room">
+				<p><strong>7) Gnoll Guard post:</strong> This is a guard post occupied by 6 Gnolls (in addition to the one above) who are in the service of the Minotaur King. AC: 5, Move: 9, HD: 2, HP: 13, 14, 7, 15, 8, 10, Damage: Longbow for 1 - 6, and Battle Axe for 1 - 10. Each Gnoll has 4 SP, and 6 GP on his person.</p>
+				<h2>The Incarnation of Death</h2>
+				<h3>Rooms 9A through 13:</h3>
+				<table>
+				<thead>
+				<tr>
+				<th align="left"></th>
+				<th align="right"></th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<td align="left">Frequency</td>
+				<td align="right">Very Rare (see below)</td>
+				</tr>
+				<tr>
+				<td align="left">Armor Class</td>
+				<td align="right">2</td>
+				</tr>
+				<tr>
+				<td align="left">Move</td>
+				<td align="right">12</td>
+				</tr>
+				<tr>
+				<td align="left">Hit Dice</td>
+				<td align="right">4 (20 Hit Points)</td>
+				</tr>
+				<tr>
+				<td align="left">%in Lair</td>
+				<td align="right">Nil</td>
+				</tr>
+				<tr>
+				<td align="left">Treasure Type</td>
+				<td align="right">Nil</td>
+				</tr>
+				<tr>
+				<td align="left">Number of Attacks</td>
+				<td align="right">1</td>
+				</tr>
+				<tr>
+				<td align="left">Damage/Attack</td>
+				<td align="right">Nil</td>
+				</tr>
+				<tr>
+				<td align="left">Special Attacks</td>
+				<td align="right">Energy Drain (see below)</td>
+				</tr>
+				<tr>
+				<td align="left">Special Defenses</td>
+				<td align="right">Invisibility</td>
+				</tr>
+				<tr>
+				<td align="left"></td>
+				<td align="right">May Only be hit by Iron Weapons</td>
+				</tr>
+				<tr>
+				<td align="left">Magic Resistance</td>
+				<td align="right">20%</td>
+				</tr>
+				<tr>
+				<td align="left"></td>
+				<td align="right">Plus immune to <em>Sleep</em>, <em>Charm</em>, and <em>Hold</em> spells</td>
+				</tr>
+				<tr>
+				<td align="left">Intelligence</td>
+				<td align="right">Average</td>
+				</tr>
+				<tr>
+				<td align="left">Alignment</td>
+				<td align="right">Lawful Evil</td>
+				</tr>
+				<tr>
+				<td align="left">Size</td>
+				<td align="right">M</td>
+				</tr>
+				<tr>
+				<td align="left">Psionic Ability</td>
+				<td align="right">Nil</td>
+				</tr>
+				<tr>
+				<td align="left">Attack/Defence Modes</td>
+				<td align="right">Nil</td>
+				</tr>
+				</tbody>
+				</table>
+				<p>In this section, there will be one special wandering monster, The Incarnation of Death. This is a minor, physical manifestation of the death god, Thanatos. The creature appears as a tall, gaunt man in flowing black robes. He has a darkly beautiful face, but appears morbidly sad. He will gesture to severely wounded characters that they should step forward and embrace him.</p>
+				<p>The Incarnation of Death will only appear to characters who are within 3 Hit Points of death. If a character normally has 3 or less Hit Points, then he or she will also see the Incarnation.</p>
+				<p>The Incarnation will appear any time that a character reaches 3 or less Hit Points and will only be visible to that character. However, a <em>Detect Invisible</em> spell will also reveal the location of the creature.</p>
+				<p>The presence of the creature will lower (raise the number required to save) the saving throws and morale of all who can see it by 2 points.</p>
+				<p>Once a living being dies in the presence of the Incarnation, the creature will snatch the soul of the dead one, making any form of <em>Ressurection</em> or <em>Reincarnation</em> impossible without a <em>Full Wish</em>.</p>
+				<p>If a character, even an unwounded one, willingly embraces the Incarnation of Death, he or she will die (no saving throw) and may not be brought back to life in any way without having a Wish of some sort.</p>
+				<p><em>Protection from Evil</em> will keep the Incarnation at bay (regardless of casters level).</p>
+				<p><em>Dispel Evil</em> or <em>Dispel Magic</em> will end the creature away until the time that an additional living being is brought within 3 Hit Points of death.<br />
+				The creature is normally <em>Invisible</em>, but once attacked it becomes visible. It will drain one energy (life) level when it scores a hit.</p>
+				</div><div id="9a" class="room">
+				<p><strong>9A) The Gates of Death:</strong> This secret door leads to the ancient chapel of the god, Thanatos (death personified). The door is plastered over and can not be detected unless looked for. Once the plaster is chipped away, an inscription will be visible, written in ancient Thracian. It states: KNOW YE THAT BEYOND THIS PORTAL LIES THE DEMESNE OF THANATOS, THE CURSED, HATER OF LIFE, GOD OF DEATH. SEEK NOT TO PASS THIS GATE FOR IT LEADS ONLY TO HIS BOSOM. THOSE WHO CHERISH LIFE HAVE SEALED THESE CHAMBERS FOR AN ETERNITY. BE WARNED, THERE IS NO RETURN THROUGH THIS DOOR. ONCE PASSED, IT IS PASSED FOREVER.</p>
+				<p>Once this door is passed through, adventurers will find themselves in a 30 long hallway, 5 wide. If they look behind them, there will be no door, only hall. The hall itself is magically <em>dark</em> (undispelable ). No torch, lantern or <em>Light</em> spell will cast more than a 5 radius of illumination. <em>Infravision</em> will be useless. Regardless of which direction the adventureres move (east or west), they will find themselves entering into Room 9 after traversing a distance of 30. Re-entering the hall from Room 9 will still bring a character back to Room 9 after moving 30. There is no way back to 9A from 9, at least by physical means.</p>
+				</div><div id="9" class="room">
+				<p><strong>9) The Chapel of Thanatos:</strong> This square room is lit, dimly by 4 low incense burners, located at the rooms comers. Each gives off an eerie green glow and a thin trail of sweet-smelling vapor. The vapor is a sleep inducing incense. A saving throw must be made against poison or the victim will succumb in 1 - 6 melee rounds after entering the room. Victim will stay asleep for 1 - 6 turns after incense stops burning. Standing directly over a burner and inhaling the concentrated fumes will lower the dice roll of the saving throw by 2 and cause sleep immediately upon failure to make the throw.</p>
+				<p>The walls are draped from ceiling to floor with black curtains of heavy fabric. Each individual wall is covered by a single piece of cloth. 8 black, marble benches are set in two rows from east to west. The small xs represent the locations of seated or kneeling, motionless figures draped in black cowled robes. The figures are long-dead human worshippers of Thanatos. Upon touch they will crumble to dust, leaving behind only a few bones, shreds of black cloth and a silver chain and skull shaped pendant with turquois eyes (value 25 GP). There are 4 figures and 4 pendants. The e is another figure that looks like the others. It is a very patient wight, AC: 5, Move: 9, HD: 3, HP: 20, Damage: 1 level energy drain. If touched it will attack with surprise on a 1 - 2 roll of a d6. If left alone it will follow and attempt to attack from behind. The wight wears no jewelry.</p>
+				<p>The walls behind the drapes are plastered and contain frescoes depicting a dark-robed faceless being (Thanatos) reigning triumphantly over all variety of mortal creatures of all religions. Above and below the frescoes is inscribed over and over NOTHING ESCAPES DEATH in the ancient Thracian language.</p>
+				<p>The north door is made of stone bound with iron. It is locked. The wight has the key to the door in a belt pouch. The key has a deaths head at both ends, but it is still recognizably a key.</p>
+				<p>The south door is <em>Wizard Locked</em> as if by a 10th level Magic User. A skull with glowing red eyes is set into the stone of the door. The skull will hiss (Magic Mouth) at any who attempt to open the door and say (Magic Mouth), ENTER FOOLS! JOIN ME IN THE BLISS THAT IS THANATOS! BECOME ONE WITH BLESSED DEATH! IT IS IN THE FINAL END THAT FULFILLMENT LIES.</p>
+				<p>The secret door in the south wall is covered by plaster. The door is locked (again the wights key will open it, see above). There is a 1 spear trap set to fire on a d6 roll of 1 - 4 directly above the door, as if fired by a 7th level fighter. The trap is triggered by inserting the key in the lock.</p>
+				</div><div id="10" class="room">
+				<p><strong>10) Crypt of the Waking Dead:</strong> The hall leading from Room 9 to this room has a pit trap, 10 deep that opens on a 1 - 3 roll of a d6.</p>
+				<p>The amorphous black blob at the north end of the room is a scarecrow made of a large black robe draped over a statue. The statue is 20 tall. A continual magical wind blows outward from the north wall as if cast by a 10th level Magic User. Only by removing the robe from the statue can the wind be stopped or by casting a successful Dispel Magic. Protected flames have a 20% chance of being extinguished while all unprotected flames will be blown out immediately upon entering the room. The wind cannot be felt until the room itself is entered.</p>
+				<p>All the secret doors into Rooms 10 A - F are covered by a layer of plaster. Painted over the locations of each door is a somber, human face, approximately 4 tall.</p>
+				</div><div id="10a" class="room">
+				<p><strong>10A) Empty Crypt:</strong> Whatever was buried in here has long since crumbled to dust. The tomb contains nothing of value.</p>
+				</div><div id="10b" class="room">
+				<p><strong>10B) The Living Dead:</strong> 3 Skeletons wait in here. AC: 7, Move: 6, HD: I, HP: 4 (x2), 8, Damage: 1 - 6. Each skeleton is dressed in shredded black robes and wears turquoise-eyed silver skull pendant around its neck (value 25 GP each). They are weaponless.</p>
+				</div><div id="10c" class="room">
+				<p><strong>10C) More Living Dead:</strong> 4 Skeletons in here. AC: 7, Move: 6, HD: 1, HP: 2, 3, 4 (x2), Damage: 1 - 6. They are dressed exactly like those in 10B.</p>
+				</div><div id="10d" class="room">
+				<p><strong>10D) Even More Living Dead:</strong> Another 4 Skeletons guard this crypt. AC: 7, Move: 6, HD: ½, HP: 3, 4, 2 (x2), Damage: 1 - 6. Again they are dressed as those in Room 10B.</p>
+				</div><div id="10e" class="room">
+				<p><strong>10E) A Second Empty Crypt:</strong> The occupant of this room disintegrated to its primal components years ago. All that remains is a pile of dust and black rags, along with a single skull pendant as described in Room 10B.</p>
+				</div><div id="10f" class="room">
+				<p><strong>10F) A Not-So-Empty Crypt:</strong> This crypt contains 6 Skeletons in chainmail, armed with Broad Swords, AC: 5, HD: 1, HP: 7, 3, 5, 4 (x2), 6, Damage: 1 - 6.</p>
+				<p>If the door to this crypt is opened, the doors to all the other crypts will spring or burst open and release any surviving occupants who will immediately begin to attack any intruders. In a locked box against the rooms north wall is 200 SP, 40 GP, and a Potion of Levitation in a skull-shaped flask.</p>
+				</div><div id="11" class="room">
+				<p><strong>11) Perfectly Preserved Curate:</strong> Placed in a state of Stasis is a 5th level Cleric of Thanatos. Macreus, 6th level Cleric of Thanatos, Align: LE, HP: 18, Armor: Chainmail, AC: 5, Weapon: Stone Mace. His regular Clerical spells include the following: Dark (reverse of Light), Protection from Good, Hold Person. Silence 15  Radius. Macreus was entombed here at a time 150 years after the downfall
+				of King Agamemnos (see history) when the worship of death was not so popular. However, his followers had found a way to preserve him indefinitely and keep him alive so they could rescue him in the near future when things cooled down a bit for the death worshippers. It seems rather, that Macreus was forgotten and left in Stasis for 950 years. Macreus will speak both the language of the Thracians (see Room 37 for translation difficulties) and also the language of the ancient Thracians, being able to read and speak it fluently. He knows of the location of Level 3A and how to get to it. He knows of the sphinx. He is aware of the Room Complex No. 45 and has heard legends of Room Complex 53.</p>
+				<p>Macreus is guarded by 6 Skeletons, AC: 7, HD: 1, HP: 5, 7 (x2), 6, 8 (x2). Opening the secret door in Room 9 will break the Stasis and Animate the skeletons. Around the neck of Macreus is a turquois-eyed silver skull pendant (value 25 GP) and at his belt is a pouch containing a Confusion (4d8) dust that must be inhaled (10 x 10 cloud). In the south corridor is a 5 deep pit trap (roll under or equal to dexterity score on a d20 or take 1 - 3 points of damage). The trap springs on a d6 roll of 1 - 3. On the floor of the pit is a locked chest containing 800 CP, and 200 SP. There is also
+				a strong but lightweight rope ladder (value 50 GP) that is 50 long. One end of the ladder has two stone balls attached to it that will fit into a pair of re-inforced holes at the end of the corridor, which ends looking out into a cavern. The balls will hold the ladder in place.</p>
+				</div><div id="12" class="room">
+				<p><strong>12) Oracular Skulls:</strong> The entry hall to this room is guarded by 2 crossbow traps that will hit as if shot by a 4th level fighter on a d6 roll of 1 - 4. They are aimed at the center of the 10 doors to Room 12. Opening the door will work to trigger the trap.</p>
+				<p>The floor of the room is set in large, red, ceramic tiles, glazed and very smooth. Inscribed on the floor in glowing green lines is a hexagram, a six-pointed star drawn within a circle. The walls and the hemisphere of the 50 high domed ceiling appear to be a night sky with constellations moving across them. The room is 1 0 degrees F colder than the hallway (the hall is approximately 55 degrees F).
+				Floating 15 off the ground in the center of the hexagram is a green, glowing, human skull with rams horns apparently growing out from it. The skull has living eyes and will watch persons entering the room, and will chuckle ominously. Once the door closes, the skull will say, SPEAK PETITIONER AND HAVE THY SAY, THAT I MAY ANSWER YE YEA OR NAY. The skull will then allow everyone present to ask one yes or no question which the referee must answer truthfully. No character may ever ask more than one question, regardless if they return again to the room. Once the question has been asked and answered, the skull will speak again and say, YOUR QUESTIONS HAVE BEEN ANSWERED AND YE ARE NOW THANATOS OWN. At that point, a small, white, skull-shaped blemish will appear on the back of the right hand of every character who asked a question. It actually means nothing, except as an identifying mark for a worshipper of Thanatos.</p>
+				<p>If the skull is attacked it is AC: -2, HD: 5, HP: 31, Damage: 2 Magic Missiles per round at up to 2 targets, Move: Fly at 24.</p>
+				<p>A final note on the skull-shaped blemish. Any character so marked will be visited by the Incarnation of Death when he or she is within 3 Hit Points of dying, regardless of where he or she may be (see The Incarnation of Death). The skull may be removed by a combination of Remove Curse and Cure Serious Wounds.</p>
+				</div><div id="13" class="room">
+				<p><strong>13) Moldy Bones:</strong> The door to this room is bolted with a heavy stone bar from the west side. The toned area in this room represents a colony of yellow mold, AC: 9. However, out of that mold will rise 6 Skeletons, AC: 7, Move: 6, HD: 1, HP: 6, 3 (x2), 5 (x2), 4, Damage: 1- 6. The skeletons appear fuzzy because they are coated with a growth of yellow mold. Striking them will have a 50% chance of releasing a 5 x 5 x 5 cloud of spores. There is an additional 30% chance that instead of releasing the small spore cloud that it will release all its spores at once in a 10 x 10 x 10 cloud. Each skeleton is good for two small clouds or one big cloud of spores. Holy Water will not affect the skeletons until the mold on them is removed.</p>
+				<p>In a stone box (location marked by the x) is 200 SP, 40 GP and a Wand that looks like a miniature, skull-headed, obsidian Wand of the demon prince Orcus (value 150 GP). It has a magic value in the hands of an evil character. It will allow them to Control Undead as per a Cleric of Thanatos of the same level as themselves (see Designers Comments).</p>
+				<p>The hall to the south leads to a cavern and a 50 drop. Note: both this opening and the opening to Room 11 are disguised by walls of Permanent Illusion and are visible (normally) from either below or the rope bridge (15).</p>
+				</div><div id="14" class="room">
+				<p><strong>14) Upper Reaches:</strong> This is the upper part of the caverns that are mapped on Level 2. From the level of the rope bridge, they descend 50 to the floor below and rise from 10 to 40 upwards. Various stalactites hang from the ceilings. Among the stalactites are a group of 20 huge bats, AC: 4, HD: ½, HP: Roll as necessary, Damage: 1 - 3 (bite), Move: 24. These creatures have a wingspread of approximately 5. Torches and normal lanterns moving across the rope bridge will dislodge 1 - 2 of
+				them, Light spells and bullseye lanterns pointed in their direction will dislodge all 20. If the bats score a hit against a character on the rope bridge, that character must roll less than or equal to his Dexterity +2 on a d20. Only one roll is made. Multiple hits will lower the score needed by 2 per hit. Falling will do 5d6 of damage.</p>
+				</div><div id="15" class="room">
+				<p><strong>15) The Rope Bridge:</strong> This is a 40 long bridge of fairly recent construction made of strong hemp ropes woven and tied around closely set planks of wood. At waist height there is a rope hand rail on both sides. The bridge is firmly attached at both ends. It would be the work of but one or two sword chops to effectively sever the bridge, AC: 8, HP: 5 points of damage to each of the two supporting strands. Due to the dampness of the air, the rope bridge will not readily burn unless first liberally
+				doused with oil (3 - 4 flasks).</p>
+				</div><div id="16" class="room">
+				<p><strong>16) Sanctuary of the Dark One:</strong> This is a worship hall devoted to Thanatos, but under his recent name of The Dark One. The chapel is about a century old and is used by the local tribesmen. The room is divided into three parts. The easternmost part contains a ritual purification basin and two guards (described later). The central section is the worship chamber. The westernmost section is the location
+				of a statue of the deity and a pair of iron braziers. This section may only be entered by a Cleric of Thanatos.</p>
+				<p>Each section is partitioned from the other by a ceiling to floor drapes of heavy black material. Each drape is made of two pieces. The central and eastern section are lit by torches while the statuary nook is lit by the braziers. The 4 es are 4 2nd level fighting men, Align: N, Platemail, AC: 3, Weapons: Spear and Broadsword, HP: 14, 10, 16, 19.</p>
+				<p>Entry into the statuary nook will result in a Curse being cast on all intruders (reverse of <em>Remove Curse</em> as if cast by a 12th level Cleric). Only Clerics of Thanatos may safely pass through. The statue is an 8 tall wooden carving of a humanoid in black robes with a skull face. Each eye of the statue is a 200 GP turquoise. Any attempt to liberate these gems will cause the flames in the braziers to explode for 1d8 of damage to all within a 5 radius and to set the nearest curtains on fire. Due to the drying of the braziers, these curtains are tinder dry.</p>
+				</div><div id="17" class="room">
+				<p><strong>17) Bars, Visions, Spears and Slides:</strong> The entrance to this area is blocked off by iron bars. They are somewhat rusty. They will bend on a d20 roll of under a characters strength score -10.</p>
+				<p>To any who fail a saving throw vs magic, it will appear that a comely Dryad is trying to break free from the bars. She seems to be in fear of something and will retreat and cower against the east wall of Room 17.</p>
+				<p>Once the bars are passed, a spear trap will fire on a 1 - 2 roll of a d6. Two spears will be fired as if by a 4th level fighter, for 2 - 12 points of damage.</p>
+				<p>The stairs go down to Level 2. There is a 30% chance that when any weight is placed upon the stairs they will form into a slick 45 degree angle slide. Every 5 moved down the stairs adds another 5% to the chance of the stairs becoming a slide. This should be checked every 5. The odds are that a character will possibly be dumped into the river.</p>
+				</div><div id="18" class="room">
+				<p><strong>18) Stairs to the Surface:</strong> This set of stairs goes up to the ruins above. It is the access route of the priests of The Dark One when they come to perform their semi-monthly ceremonies here in the holy of holies. Any artificial light coming down this stair will be visible to the guard (e) posted in front of Room 20. He will then blow a high pitched magical whistle that only the servants of The Dark One can hear, thus allowing them to prepare ambushes. This whistle can be heard in Rooms 14
+				through 26.</p>
+				</div><div id="19" class="room">
+				<p><strong>19) A Second Rope Bridge:</strong> This is an approximately 25 long, T shaped bridge of fairly recent construction made of strong hemp ropes woven and tied around closely set planks of wood. At waist height, there is a rope hand rail on both sides. The bridge is firmly attached at both ends. The cords attaching the bridge to the rock are AC: 8, HP: 5 for each cord (2). Due to the dampness in the air, the rope will not readily burn unless first liberally doused with oil (4 - 5 flasks).</p>
+				<p>Hanging amongst the stalactites are 5 huge bats, AC: 4, HD: ½, HP: 3 (x2), 1, 4 (x2), Damage: bite for 1 - 3, Move: 24. These creatures have a wingspread of approximately 5. Torches and normal lanterns moving along the rope bridge will dislodge 1 - 2 of them, Light spells and directional lanterns, if pointed in their direction, will dislodge all 5. If the bats score a hit against a character on the rope bridge, that character must roll less than or equal to his dexterity +2 on a d20. Only one
+				roll is made. Multiple hits will lower the score needed to be under by 2 points per hit. Falling will do 5d6 of damage.</p>
+				<p>Light moving along this bridge will alert the guard posted at the door to Room 20. See Room 18 above for consequences.</p>
+				</div><div id="20" class="room">
+				<p><strong>20) Ritual Hall of Purification:</strong> Posted outside of this room is a 2nd level fighter (e), Align: N, Platemail, AC: 3, Weapon: Spear and Broadsword, HP: 15. He has a magical whistle made of bronze that he will blow when intruders are spotted. This whistle will alert all fighters and servants of The Dark One in Rooms 14 through 26, who will then prepare ambushes. If the characters have been branded by Thanatos in Room 12, they too will be able to hear the whistle.</p>
+				<p>The room is a purification chamber where the priests of The Dark One ceremonial clean themselves before entering into any holy rites. The circle in the rooms center is a 5 diameter basin that sets on a 3 tall pillar of skulls. At the north end of the room is a 10 diameter column of black drapery that hangs from the ceiling 20 overhead to the floor. If the two sections of drapes are pulled back all characters viewing the black statue behind it must save vs. paralyzation or be paralyzed for 1 - 6 turns (not rounds). Worshippers of Thanatos (and those wearing his brand) are immune. The two cs flanking the statue are a pair of adepts in the service of The Dark One, 2nd level Clerics, Align: LE, Leather Armor and Shield, AC: 6, Damage: Mace for 1 - 6, HP: 7, 8, spells: <strong>Cure Light Wounds (reverse)</strong>. The 2 es in the room are a pair of fighters in the service of the god. 2nd level fighters, Align: N, Platemail, AC: 3, Weapons: Spear for 1- 6, and Broadsword for 1- 8, HP: 13, 14.</p>
+				<p>The eyes of the statue are a pair of matched citrines worth 150 GP each.</p>
+				</div><div id="21" class="room">
+				<p><strong>21) Outer Lair of the Wolverine:</strong> This rough-carved room reeks of animal waste and a skunk-like odor. Any noise, movement, breathing, etc, in here will bring the giant wolverine, AC: 4, HD: 4 + 4, 3 attacks 2-5/2-5/2-8, + musk as per a skunk at rear opponents, HP: 26. The creature also attacks with a +4 hit probability.<br />
+				Lying about the floor in this room are various Weapons (1 Broadsword, 3 Spears, a Light Crossbow and 10 Quarrels, a Hand Axe, and 2 Daggers), a Helmet (full head, closed) and two or three pieces of Platemail similar to that worn by the guards in Rooms 20 and 16. All the equipment is drenched in wolverine musk and is unusable until well washed and/or aired out for several days.</p>
+				</div><div id="22" class="room">
+				<p><strong>22) The Lair of the Giant Wolverine:</strong> This rough-carved chamber reeks so badly that any character entering it must make a saving throw vs. nausea (roll under constitution on a d20) or lose half his or her strength for 1 - 6 turns, effect immediate. The wolverine (see Room 21) will normally (95%) be in this chamber. There is absolutely nothing of value in here (unless one likes garbage, bones and wolverine stench). The concealed door in the west wall is quite visible if the huge pile of garbage (shaded area) is dug away.</p>
+				</div><div id="23" class="room">
+				<p><strong>23) The Sacrificial Altar of The Dark One:</strong> There is a 06% chance that a sacrificial ceremony will be going on here. If so, the following personae will be present: an 8th level Patriarch of The Dark One, Align: LE, Annor: Chainmail, AC: 5, Weapon: Hammer, HP: 36, spells: <em>Protection from Good, Cause Light Wounds, Hold Person, Silence 15 Radius, Cure Serious Wounds, Sticks to Snakes, Dispel Good, Animate Dead, Speak with Dead, Finger of Death</em> (see Gods and Worshippers); two 4th level Vicars of The Dark One, Align: LE, Armor: Leather, AC: 7, Weapon: Hammer, HP: 15, 20, spells: <em>Cure Light Wounds</em> (x2), <em>Hold Person</em>. Also in attendance are 10 various 0 level types of various ages and sexes who are serving as witnesses, trainees, body servants, etc. (level 0 characters attack as level ½ hit die creatures). Roll hit points (1- 4) as needed for the 0 levels.</p>
+				<p>Guarding the ceremony will be an additional 8 fighters in Platemail, 1st level fighters, Align: N, Armor: Platemail, AC: 3, Weapon: Spear and Broadsword, HP: 3 (x2), 8 (x3), 6 (x2), 7. In addition there will be three bound victims who are about to be pushed into the abyss. The victims are naked. Two 0 level young women and a 1st level Elven fighter, HP: 7 (roll stats if necessary).</p>
+				<p>If there is no sacrificial ceremony in progress there will be 10 huge bats, AC: 4, HD: ½, HP: 4 (x3), 1 (x3), 2, 3 (x3), bite for 1 - 3, Move: 24. Any light in this area will disturb all the bats and they will attack anything that ventures past the pillars and out onto the bridge (24 ). Any fall from this area into the caverns below will do 5d6 of damage.</p>
+				</div><div id="24" class="room">
+				<p><strong>24) Trapdoor:</strong> This is a trap that will open on a d6 roll of 1 - 4 and then remain open until pulled shut again. It will drop victims to the pool below the rapids on the 2nd level (Room 31 ). The bridge is made of mortarred stone.</p>
+				</div><div id="25" class="room">
+				<p><strong>25) Vault of the Cermonial Treasures:</strong> This is the storage place of the cult of The Dark Ones holy relics, ceremonial trappings and other things of cultic and worldly value. The 4 es, in and outside of the room represent 2nd level fighters that are guarding the loot, Align: N, Armor: Platemail, AC: 3, Weapons: Spear for 1 - 6, Broadsword for 1- 8, HP: 11, 12, 10, 8, 16, 13. If it appears that the fighting ability of the guards is near equal to any invaders, then the north west guard will pull a lever that will release the 1 black bear from Room 26 (see Room 26 for statistics) who will then join the fracas in 1 round, attacking anything not in the distinctive platemail of the guards.</p>
+				<p>The room is lit by four torches that flank chests on the north and south walls. Each chest is locked and has a <strong>Curse</strong> (as per the reverse of <strong>Remove Curse</strong>) that has an 8 turn duration. The <em>Curse</em> will unfailingly lower the strength of any non-Clerics of The Dark One who touch it to 3. This curse will apply only to the 1st character to actually physically touch either of the boxes or their contents, including touching with weapons or lock picks. The north box is empty except that a cloud of sleep gas will be released into the room (save vs. poison) which will put characters not saving to sleep for the number of turns equal to their constitution subtracted from 20. The south box contains the following: a jeweled Mace valued at 200 GP, an Iron Box containing 100 GP, a Leather Bag with five l 0 GP Gems, a 200 GP Gem, and a 150 GP Gem. There is also a skull-shaped silver goblet set with gem chips valued at 50 GP and Platinum Box, intricately carved with ancient runes valued at 250 GP (the runes merely state that this box was crafted for his high excellence the King of Thracia, Argos II). Inside the platinum box is a pair of glass beads that appear to be exact replicas of human eyes. If a character loses one or both of his or her eyes, they can be replaced with these magic eyes which will grant <em>Infravision</em> and on a 2 times per day basis, <strong>X-ray Vision</strong>.</p>
+				</div><div id="26" class="room">
+				<p><strong>26) The Bear Lair:</strong> In this rough-carved room resides a black bear, AC: 7, HD: 3 + 3, Damage: 1-3/1-3/1-6, Hugs for 2 - 8, HP: 24. This bear will attack any characters not in the guards distinctive Platemail. The bars to its cave are raised and lowered by a lever in Room 25.</p>
+				</div><div id="27a" class="room">
+				<p><strong>27A) Jets of Flame:</strong> This is the northern half of an immense hall that appears to have been cleft in half by a deep chasm that extends into the walls both east and west. Any character being so unlucky as to fall into this chasm will take 8d6 of damage as they fall 80. There is a 10% chance that the floor within 1 of the edge will crumble away when weight is placed upon it. It will then require a saving throw on a d20 of under the characters Dexterity -2 to keep from falling in. The secret door in the north wall is disguised in the ornate panel work and can normally be discovered only on a roll of 1 on a d6. The room reeks of decaying flesh.<br />
+				Passing between the two northernmost pillars will effect the following: A melee round later, flame will come spouting out of holes in the floor of the half circle area to the north (The holes are marked by dots on the map). Any character standing over these holes will take 1d6 of fire damage and any items on their person must save against normal fire. Any character remaining over a fire-spout will continue to take ld6 of damage per round. After 3 rounds of flame (which leaves no smoke since it results from burning gas), a statue of a demon will appear to rise up out of the flames, all the while Magic Mouth spells set up a horrible, evil laughing. Flames pour out of the statues mouth and its eyes glitter and sparkle for they are each a 300 GP gem. After 1 - 6 melee rounds the statue will begin to sink on its platform down to Room 53 on Level 2. After the head of the statue passes the floor level, 2 thick stone panels will seal the shaft closed and the fires will suddenly die out. The walls of the shaft itself are constructed of a slick, oily textured stone. The statue will work but once per week (it takes that long for the gas to recollect).</p>
+				</div><div id="27b" class="room">
+				<p><strong>27B) The Burial Crypt of the Cult of the Dark One:</strong> The reek of decaying flesh permeates the air here and in 27 A. For a further description of this room see above (27 A). Lying in ordered rows are rank upon rank of corpses. Most are long decayed and in skeletal form, but many are still fairly fresh, not having been dead more than a few weeks (if you can call that fresh!). Lurking about and feeding on the cadavers is 1 carrion crawler, AC: 3, Move: 12, HD: 3 + 1, Damage: paralysis, 8 attacks, HP: 17. There is a 20% chance that the crawler will be hanging in the chasm. In one of the corpses is a clutch of 20 carrion crawler eggs. If the southernmost pair of columns is approached within 5 or if the columns are passed between or to either side, 1 - 4 skeletons will animate and begin to attack intruders. Each additional melee round 1 - 4 more skeletons will animate as long as there are living intruders to fight, up to a total of 400 skeletons. Skeletons, AC: 7, Move: 12, HD: 1, Damage: 1-6, HP: 3.</p>
+				<p>The x along the east wall represents a locked, stone chest. The chest is guarded by a magic trap that will do 2 - 12 points of electric damage to the first character to physically touch the box. The box contains personal possessions and valuables of the local patriarch of The Dark One. Inside the chest is the following: A map that shows every room and secret passage in the holy of holies area of The Dark One (Rooms 14 through 27); a wooden box containing two 50 GP gems, a scroll written in ancient Thracian that tells of the sealed crypt of The Dark One (Rooms 9A through 13); and a begemmed statue of Athena, stolen from the palace of the Minotaur King long since, valued at 400 GP. The scroll that hints of the location of the crypt of Thanatos reads as follows:</p>
+				<blockquote>
+				<p>Dark God, Deaths Head,<br />
+				 Sealed Forever in Ceaseless Mourning.<br />
+				Captive and Kept From Service to Man,<br />
+				 Lost to Man is the Oracle Wise.</p>
+				</blockquote>
+				</div>
+				
+			</div>
+			<div id="separator" ></div>
+			<div id="second" >
+				<div id="top-button-row">
+					<button class="top-button" onclick="window.location.href='CoT-0-viewer.html';">Surface</button>
+					<button class="top-button" onclick="window.location.href='CoT-1-viewer.html';"><strong>Level 1</strong></button>
+					<button class="top-button" onclick="window.location.href='CoT-2-viewer.html';">Level 2</button>
+					<button class="top-button" onclick="window.location.href='CoT-3a-viewer.html';">Level 3a</button>
+					<button class="top-button" onclick="window.location.href='CoT-3-viewer.html';">Level 3</button>	
+					<button class="top-button" onclick="window.location.href='CoT-4-viewer.html';">Level 4</button>
+				</div>
+				
+				<div id="zoom-buttons">
+					<button class="zoom-button" onclick="zoomIn()"><strong>+</strong></button>
+					<button class="zoom-button" onclick="zoomOut()"><strong>-</strong></button>
+				</div>
+				<svg id="map_svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 840 1109">
+				  <image width="840" height="1109" xlink:href="CoT-1.JPG"></image> <a xlink:href="#1">
+					<rect x="348" y="366" fill="#000" opacity="0" width="139" height="140" onclick="scrollToEntry('1')"></rect>
+				  </a><a xlink:href="#2">
+					<rect x="377" y="218" fill="#000" opacity="0" width="81" height="148" onclick="scrollToEntry('2')"></rect>
+				  </a><a xlink:href="#3">
+					<rect x="391" y="119" fill="#000" opacity="0" width="53" height="95" onclick="scrollToEntry('3')"></rect>
+				  </a><a xlink:href="#4">
+					<rect x="283" y="143" fill="#000" opacity="0" width="106" height="71" onclick="scrollToEntry('4')"></rect>
+				  </a><a xlink:href="#5">
+					<rect x="445" y="144" fill="#000" opacity="0" width="108" height="69" onclick="scrollToEntry('5')"></rect>
+				  </a><a xlink:href="#6">
+					<rect x="485" y="228" fill="#000" opacity="0" width="28" height="94" onclick="scrollToEntry('6')"></rect>
+				  </a><a xlink:href="#7">
+					<rect x="515" y="255" fill="#000" opacity="0" width="108" height="42" onclick="scrollToEntry('7')"></rect>
+				  </a><a xlink:href="#9a">
+					<rect x="550" y="325" fill="#000" opacity="0" width="50" height="75" onclick="scrollToEntry('9a')"></rect>
+				  </a><a xlink:href="#9">
+					<rect x="662" y="309" fill="#000" opacity="0" width="100" height="100" onclick="scrollToEntry('9')"></rect>
+				  </a><a xlink:href="#10">
+					<rect x="676" y="47" fill="#000" opacity="0" width="69" height="126" onclick="scrollToEntry('10')"></rect>
+				  </a><a xlink:href="#10a">
+					<rect fill="#000" opacity="0" x="646" y="45" width="30" height="42" onclick="scrollToEntry('10a')"></rect>
+				  </a><a xlink:href="#10b">
+					<rect fill="#000" opacity="0" x="646" y="90" width="30" height="42" onclick="scrollToEntry('10b')"></rect>
+				  </a><a xlink:href="#10c">
+					<rect x="646" y="130" fill="#000" opacity="0" width="30" height="42" onclick="scrollToEntry('10c')"></rect>
+				  </a><a xlink:href="#10d">
+					<rect x="745" y="45" fill="#000" opacity="0" width="30" height="42" onclick="scrollToEntry('10d')"></rect>
+				  </a><a xlink:href="#10e">
+					<rect x="745" y="90" fill="#000" opacity="0" width="30" height="42" onclick="scrollToEntry('10e')"></rect>
+				  </a><a xlink:href="#10f">
+					<rect x="745" y="130" fill="#000" opacity="0" width="30" height="42" onclick="scrollToEntry('10f')"></rect>
+				  </a><a xlink:href="#11">
+					<rect x="732" y="505" fill="#000" opacity="0" width="40" height="40" onclick="scrollToEntry('11')"></rect>
+				  </a><a xlink:href="#12">
+					<rect x="550" y="504" fill="#000" opacity="0" width="112" height="113" onclick="scrollToEntry('12')"></rect>
+				  </a><a xlink:href="#13">
+					<rect x="598" y="698" fill="#000" opacity="0" width="122" height="105" onclick="scrollToEntry('13')"></rect>
+				  </a><a xlink:href="#14">
+					<rect x="612" y="802" fill="#000" opacity="0" width="155" height="100" onclick="scrollToEntry('14')"></rect>
+				  </a><a xlink:href="#15">
+					<rect x="535" y="899" fill="#000" opacity="0" width="100" height="100" onclick="scrollToEntry('15')"></rect>
+				  </a><a xlink:href="#16">
+					<rect x="616" y="1012" fill="#000" opacity="0" width="131" height="90" onclick="scrollToEntry('16')"></rect>
+				  </a><a xlink:href="#17">
+					<rect x="747" y="1034" fill="#000" opacity="0" width="62" height="52" onclick="scrollToEntry('17')"></rect>
+				  </a><a xlink:href="#18">
+					<rect x="263" y="965" fill="#000" opacity="0" width="119" height="78" onclick="scrollToEntry('18')"></rect>
+				  </a><a xlink:href="#19">
+					<rect x="324" y="898" fill="#000" opacity="0" width="122" height="67" onclick="scrollToEntry('19')"></rect>
+				  </a><a xlink:href="#20">
+					<rect x="307" y="723" fill="#000" opacity="0" width="115" height="108" onclick="scrollToEntry('20')"></rect>
+				  </a><a xlink:href="#21">
+					<rect x="477" y="761" fill="#000" opacity="0" width="100" height="104" onclick="scrollToEntry('21')"></rect>
+				  </a><a xlink:href="#22">
+					<rect x="450" y="601" fill="#000" opacity="0" width="100" height="154" onclick="scrollToEntry('22')"></rect>
+				  </a><a xlink:href="#23">
+					<rect x="185" y="794" fill="#000" opacity="0" width="100" height="100" onclick="scrollToEntry('23')"></rect>
+				  </a><a xlink:href="#24">
+					<rect x="212" y="717" fill="#000" opacity="0" width="75" height="77" onclick="scrollToEntry('24')"></rect>
+				  </a><a xlink:href="#25">
+					<rect x="128" y="630" fill="#000" opacity="0" width="85" height="79" onclick="scrollToEntry('25')"></rect>
+				  </a><a xlink:href="#26">
+					<rect x="29" y="651" fill="#000" opacity="0" width="100" height="190" onclick="scrollToEntry('26')"></rect>
+				  </a><a xlink:href="#27a">
+					<rect x="76" y="112" fill="#000" opacity="0" width="191" height="267" onclick="scrollToEntry('27a')"></rect>
+				  </a><a xlink:href="#27b">
+					<rect x="73" y="377" fill="#000" opacity="0" width="199" height="195" onclick="scrollToEntry('27b')"></rect>
+				  </a>
+				</svg>
+			</div>
+		</div>
+		<script>
+
+			function zoomIn() {
+				var e = document.getElementById('map_svg');
+				var width = e.style.width;
+				if (width == '') {
+					width = '110%';
+				}
+				width.replace("%", "");
+				width_int = parseInt(width);
+				width_int = width_int + 10;
+				e.style.width = width_int.toString() + '%';
+				
+			}
+
+			function zoomOut() {
+				var e = document.getElementById('map_svg');
+				var width = e.style.width;
+				if (width == '') {
+					width = '110%';
+				}
+				width.replace("%", "");
+				width_int = parseInt(width);
+				width_int = width_int - 10;
+				e.style.width = width_int.toString() + '%';
+				
+			}
+
+			function scrollToEntry(anchor) {
+				var e = document.getElementById(anchor);
+				rooms = document.getElementsByClassName('room');
+				for (let i = 0; i <  rooms.length; i++) {
+					rooms[i].style.background = "mintcream";
+				}
+				e.style.background = "palegoldenrod";
+			}
+	
+			// A function is used for dragging and moving
+			function dragElement(element, direction)
+			{
+				var   md; // remember mouse down info
+				const first  = document.getElementById("first");
+				const second = document.getElementById("second");
+
+				element.onmousedown = onMouseDown;
+
+				function onMouseDown(e)
+				{
+					//console.log("mouse down: " + e.clientX);
+					md = {e,
+						  offsetLeft:  element.offsetLeft,
+						  offsetTop:   element.offsetTop,
+						  firstWidth:  first.offsetWidth,
+						  secondWidth: second.offsetWidth
+						 };
+
+					document.onmousemove = onMouseMove;
+					document.onmouseup = () => {
+						//console.log("mouse up");
+						document.onmousemove = document.onmouseup = null;
+					}
+				}
+
+				function onMouseMove(e)
+				{
+					//console.log("mouse move: " + e.clientX);
+					var delta = {x: e.clientX - md.e.clientX,
+								 y: e.clientY - md.e.clientY};
+
+					if (direction === "H" ) // Horizontal
+					{
+						// Prevent negative-sized elements
+						delta.x = Math.min(Math.max(delta.x, -md.firstWidth),
+								   md.secondWidth);
+
+						element.style.left = md.offsetLeft + delta.x + "px";
+						first.style.width = (md.firstWidth + delta.x) + "px";
+						second.style.width = (md.secondWidth - delta.x) + "px";
+					}
+				}
+			}
+
+			dragElement( document.getElementById("separator"), "H" );
+
+		</script>
+	</body>
+</html>

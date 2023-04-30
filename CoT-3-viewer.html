@@ -1,0 +1,409 @@
+<html>
+	<head>
+		<title>Level 3 - Caverns of Thracia</title>
+		<style>
+
+.splitter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#separator {
+    cursor: col-resize;
+    background-color: #aaa;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='30'><path d='M2 0 v30 M5 0 v30 M8 0 v30' fill='none' stroke='black'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+    height: 100%;
+
+    /* Prevent the browser's built-in drag from interfering */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#first {
+	
+    background-color: #dde;
+    width: 30%;
+    height: 100%;
+    min-width: 10px;
+	overflow: scroll;
+}
+
+#second {
+    background-color: #fff;
+    width: 70%;
+    height: 100%;
+    min-width: 10px;
+	overflow: scroll
+}
+
+#top-button-row {
+	position: fixed;
+	
+}
+
+#zoom-buttons {
+	position: fixed;
+	right: 10px;
+	
+}
+
+.top-button {
+	background-color: #5081a9;
+	border: none;
+	color: white;
+	padding: 8px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.zoom-button {
+	background-color: #5081a9;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.room {
+	background-color: mintcream;
+}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="splitter">
+			<div id="first">
+				<h1>Level Three</h1>
+				<p>This level is the palace and garden that once belonged to the Thracian King, Agamemnos. This whole level, at least the outdoors part of it, is lit by an intensely powerful light that almost, but not quite, equals sunlight. There is a thin layer of cloud near the ceiling that covers the stalactites and any activity that may occur up there. The only known access to this level is via the teleportation pads located at Number 54 near the east end of the gardens and Room 89 in the palace. The
+				garden is patrolled by Gnolls and Lizard Men who will attempt to capture anyone they find. In the east end of the garden there will be numerous Dryads. They are deathly afraid of the Beast Men and will do nothing to aid any group of adventurers, even if it may mean defeat of the Minotaur and his minions.</p>
+				<div id="54" class="room">
+				<p><strong>54) Teleportation Pad:</strong> This circular area is rimmed by low trees that bear fruit continually. The fruit are fist-sized strawberries. They are quite nutritious and will serve as both water and rations. They do not keep well, however, and must be eaten within 1 day of picking or they go mushy and rot. 6 Gnolls will be on guard here. One or two will be plucking and eating fruit while the rest are on guard. They will be in the shade of the trees so that they will be somewhat covered and camouflaged.
+				Each Gnoll is armed with a Longbow and a Halberd. AC: 5, Move: 9, HD: 2, Damage: 1 - 6 with Bow, 1 - 10 with Halberd, HP: 13, 7, 8, 5, 10, 9. The teleportation pad is activated by standing on the 10 square section at the center of the pad for one full melee round. Any being standing in that area will be teleported to the pad in Temple 45 on the 2nd level.</p>
+				</div><div id="55" class="room">
+				<p><strong>55) Transparent Tower of Water:</strong> This item is a complete mystery to the occupants of this level. It is apparently a 10 diameter transparent tube containing sparkling, bubbling water that seems to rise 200 from the floor of the garden up to the ceiling of the great cavern. It is assumed that this is the source of the river. This tube goes through Room 117 down below the surface of the garden and rises up to Room or Chamber 34 on the 2nd level. The tube itself is AC: -8 and any given section must
+				take 100 hit points for it to be cracked.</p>
+				</div><div>
+				<p><strong>56-65) The Dryads:</strong> Each Dryad will be individually described, but to save time and space, the consistent statistics will be listed here and can be referred back to when necessary. AC: 5, Move: 12, HD: 2, Damage: 1 -4, HP: see below. These Dryads will not willingly go further than 240 from their trees (6 on the map). Each Dryad has unlimited use of a +2 <em>Charm Person</em> spell (the +2 is in the Dryads favor). The Dryads will not <em>Charm</em> or fight the Gnolls normally, as their uprooting and destruction has been threatened if they cause any trouble.</p>
+				</div><div id="56" class="room">
+				<p><strong>56) Astraea:</strong> Her tree is an Oak. HP: 13.</p>
+				</div><div id="57" class="room">
+				<p><strong>57) Briseis:</strong> Her tree is an Ash. HP: 12.</p>
+				</div><div id="58" class="room">
+				<p><strong>58) Calliste:</strong> Her tree is an Elm. HP: 14.</p>
+				</div><div id="59" class="room">
+				<p><strong>59) Deianira:</strong> Her tree is an Oak. HP: 6.</p>
+				</div><div id="60" class="room">
+				<p><strong>60) Eidothera:</strong> Her tree is a Maple. HP: 14.</p>
+				</div><div id="61" class="room">
+				<p><strong>61) Flora:</strong> Her tree is a Hickory. HP: 15. She is aware of a trap door hidden beneath the sod on the south side of her trees trunk. She is not certain what it is, only that it has been there longer than she has.</p>
+				</div><div id="62" class="room">
+				<p><strong>62) Gaia:</strong> Her tree is a Walnut. HP: 10.</p>
+				</div><div id="63" class="room">
+				<p><strong>63) Hypennnestra:</strong> Her tree is an Ash. HP: 7.</p>
+				</div><div id="64" class="room">
+				<p><strong>64) lphigenia:</strong> Her tree is a Willow. HP: 12.</p>
+				</div><div id="65" class="room">
+				<p><strong>65) Jocasta:</strong> Her tree is an Oak. HP: 12.</p>
+				</div><div id="66" class="room">
+				<p><strong>66) The Stumps of Lost Trees:</strong> Recently the Minotaur King has been removing trees to fuel the boilers in the cellars beneath his palace. The supply of wood from the surface has dwindled lately (the Tribesmen are flexing their muscles and refusing to pay tribute to the Minotaur King). Several of the removed trees were Dryad-containing trees. Their loss is mourned and if this information is used as a verbal weapon, the Dryads aid might be gained against the minions of the Minotaur.</p>
+				</div><div id="67" class="room">
+				<p><strong>67) Chapel of the Wondrous Well:</strong> This small, Greek-looking temple is flanked on all sides by a 10 stair, that rises vertically only 5. It is roofed over and in its center is a 5 diameter well that may seem to contain water. Climbing more than 10  down into the well will teleport the character doing so to the center of Room 3 on the 1st level. However, this will work effectively for a total of 4 characters. After that there is a 5% cumulative chance that it will not work each time it is used. If it ever stops functioning, it will cease to function forever. This chapel is the only safe passage through the tree wall (67 A) and is guarded by a Minotaur, 5 Gnolls and 2 Lizard Men. Minotaur: AC: 6, Move: 12, HD: 6, Damage: Butt for 2 - 8, Bite for 1 - 3 and Halberd for 1 - 10, HP: 31. 5 Gnolls: AC: 5, Move: 9, HD: 2, Damage: Longbow for 1 - 6, Battle Axe for 1 - 8, HP: 8,12 (x2), 14, 15. Lizard Men: AC: 4, Move: 6, HD: 2 + 1, Damage: Club for 1 - 8, 4 Darts for 1 - 4 each, HP: 10, 6. One of the Gnolls will be posted in the clump of trees near the teleportation pad and will report back to the guard group at the chapel.</p>
+				</div><div id="67a" class="room">
+				<p><strong>67 A) Aroused and Evil Trees:</strong> This row of trees were planted and trained by the Shamen, Gruk, to act as a vicious fence to keep out unwanted intruders. The trees will allow cows, Minotaurs, Lizard Men and Gnolls to pass freely beneath them. But, if a Human approaches within 50 of them, they will lower a network of branches that will act like a barrier of thorns to any character trying to cut his way through. Trees: AC: 5, HD: 6, Damage: 3 attacks per turn at 1 - 8, HP: 33, 24 (x2), 37, 16, 21, 46, 27, 23, 26 (ten trees total). To cut a path through the thorn fence of the trees, a total of 40 hit points must be done to the fence. This will create an approximately man-sized tunnel, 15 long through the thorny barrier. This damage does not count as damage done against the trees themselves. To kill the trees, the trunks must first be reached. At least 20 hit points must be done to the thorn barrier that even surrounds the tree trunks. The thorns are AC: 7. The sap of these trees are fire-resistant and has a healing quality. If it is allowed to flow onto a wound. it will heal 1 - 8 points of damage per character.</p>
+				</div><div id="68" class="room">
+				<p><strong>68) The Ancient Oak:</strong> This walled in oak tree existed from the time of King Agamemnos over 1100 years ago. It houses an ancient and wise Dryad named Kore. She appears as a middle-aged, yet attractive woman. From the vantage point of the air or from the steps of the chapel (67) she can often be seen sunning herself between patches of shade on the lawn surrounding her tree. In fact, she will often couch her head on the scaly hide of the Golden Lizard that guards her tree. The lizard is not very intelligent and it will not distinguish between friend or foe. He has kept her safe for a millenium now, but both he and the Dryad are slowly dying. Even now his scales are losing their shine and her tree is becoming patchy with bare spots amongst the branches. Lizard: AC: 3, Move: 9, HD: 15, Damage: Bite for 4 - 24, 2 Claws for 2 - 12 each, HP: 59. The lizard has been permanently endowed with <em>Protection from normal Missiles</em>. Kore, the Dryad: AC: 5, Move: 12, HD: 2, Damage: 1 - 4, spells: <em>+2 Charm Person</em>. She knows her way about in the south wing of the palace and can give directions concerning the north wing. She has never been into the tunnels beneath and knows nothing of them. Not even hearsay. Because she is not a threat, the Beast Men have left her alone. But lately, the Minotaur King and his lieutenants have been eyeing her tree for the wood value.</p>
+				</div><div id="69" class="room">
+				<p><strong>69) Jailers for a Noble Tree:</strong> Surrounding the tree is a 12 tall stone wall that is topped with spikes and large pieces of broken glass. The sharpened spikes point outward. There is a gate to the northwest that is hidden by the brambles that guard the enclosure. The brambles are AC: 4 (tough!!) and require 50 hit points of damage to be given before a man-sized hole or passage can be cut through them. When cut, these brambles exude sickly smelling vapor that will cause sleep if a saving throw vs. poison is not made. Sleep will last for a number of turns equal to the characters constitution subtracted from 20. If a character falls asleep in a path cut through the brambles and is left there, the brambles will regenerate 2 hit points every melee round (they grow back swiftly) and if they regenerate back half the damage taken they will begin to absorb 1 life level every two melee rounds from a sleeping victim, who if he awakens will have to cut him or herself free of brambles. Fire will do damage to the plants, but it will not spread.</p>
+				<p>Guarding against aerial attack are 5 Harpies. They will sit on the southeastern roof of the palace and watch with malevolent little eyes as adventurers sneak by. If an assault is made on the hedge, they will swoop down, harrassing and attempting to Charm and lead victims away to be devoured. If an attempt to reach the Dryad is made through the air, the Harpies will immediately attack to kill. AC: 7, Move: 6/15, Damage: 2 Claws for 1 - 3 each, and a Sword for 1 - 6, HP: 15 (x2), 11, 9, 19.</p>
+				</div><div>
+				<h2>The Palace of the Minotaur King:</h2>
+				<p>This gleaming marble structure appears very Greek in design with a gabled roof, ionic columns and sculpture filled pediments. Although most of the original furnishings of the palace are long gone from continual use, the building itself remains structurally sound. The Rulers of this place have not allowed their subjects to deface the rooms and statuary.</p>
+				</div><div id="70" class="room">
+				<p><strong>70) The Courtyard:</strong> The courtyard of the palace is tiled with large, white marble panels. The two pools of water that flank the stairs going up into the palace itself are 10 deep and the water in them is 100 degrees Fahrenheit. The level of the floor of the palace itself is 1 0 higher than the level of the courtyard. Guarding the courtyard is a 5-headed Hydra, AC: 5, Move: 12, HD: 5, Damage: 5 Bites at 1 - 6 each, HP: 35. If wounded badly, the creature will try to escape into the temple area and
+				raise an incredibly loud hissing and honking noise to draw reinforcements, which will come in the form of a group of wandering monsters from the Palace Encounter Table. If the encounter rolled is not one that would normally come to the aid of an embattled Hydra, the creature will have to finish its battle unaided. Embedded between the eyes of each head is a 100 GP sapphire.</p>
+				</div><div id="71" class="room">
+				<p><strong>71) Temple Hall of the God, Zeus:</strong> The stonework in this hall is ornately carved and richly decorated with scenes of battle, magic and the lives of the gods. Behind the statue on the west wall are a pair of crossed thunderbolts. The statue at the west end of the hall is of the god, Zeus. It appears as a bearded, muscular man clutching a pair of crossed thunderbolts in his right hand. If the statue is approached within 20, the sounds of thunder can be heard as if from a distance. The throne upon
+				which the statue sits appears to be constructed of solid gold. It is not and is merely gilt marble (the gilding is worth over 1000 GP though). If the statue is touched, the toucher will recieve a mild, harmless, but tingly electric shock. The doors in the north wall seem to be constructed of solid gold, as do the doors in the south wall. Actually they are gilt wood. The secret doors in the south wall are disguised as relief sculpture panels.</p>
+				</div><div id="72" class="room">
+				<p><strong>72) Throne Room of the Minotaur King:</strong> This ornate room is where the Minotaur King holds his occasional court. The floor is carpeted, but the carpet is very worn and threadbare in places, with the marble floor showing through. The walls are decorated with alternating panels of low relief sculpture and panels of intricately wrought paintings of hunts, ceremonies, banquets, and orgies. The throne is large and crudely sculpted out of black stone with little or no decoration. It is, however, large
+				enough to support the Minotaurs huge frame. The draperies on the walls behind the throne part in the middle and are woven of very tough fabric. They are a bit brittle with age though. The braziers to the right and left of the throne are wrought of iron and are quite rusty. They are usually lit and produce a dim light with little smoke. They are the only light in the room. There is a 30% chance that the first time the room is entered the Minotaur will be holding court and will have a squad of
+				Gnolls present and one of his lieutenants, the Dog Brothers in attendance.</p>
+				<p>Stronghoen, The Minotaur King: AC: 6, Move: 12, HD: 8, Damage: 1 Butt for 2 - 12, 1 Bite for 1 - 6, Battle Axe for 2 - 16, HP: 50. This Minotaur is the descendant of a long line of Minotaurs who have consistantly produced intelligent offspring. It is suspected that his ancestors were magically altered in some way. Not only does this monster function as a powerful fighter, but he may also throw magic as a 6th level Magician with the following spells available: <em>Charm Person (x2), Shield, Sleep, Invisibility, Wizard Lock, Fireball, Haste</em> (these spells may be changed at the descretion of the referee).</p>
+				<p>The Gnoll squad is made up of 6 Gnolls armed with Two-handed Swords. Three of the Gnolls will have Longbows. AC: 5, Move: 9, HD: 2, Damage: 1 - 6 with Longbow, 1 - 10 with Two-handed Sword, HP: 8 (x2), 9, 10, 14, 11. Each Gnoll will have 7 SP and 6 GP on his person.</p>
+				<p>Dog Brothers: These are crew of intelligent, man-like dogs. They act as guides and overseers for the rapacious Gnolls. These dog-men will rarely be seen out side of the palace level or its dungeon complex. If they are encountered, it will be as a commander of a Gnoll guard squad. The Dog Brother, Bitterbark, AC: 6, Move: 12, HD: 4, Damage: Bite for 1 - 4 or by weapon type, in this case, a Sword for 1 - 8, Align: Neutral, HP: 17. Often a Dog Brother may operate solely as a Magic User, never going beyond the 5th level of expertise.</p>
+				<p>If the court is attacked, the Minotaur King and the Dog Brother will stick around long enough to ascertain the direction the battle is going and then if in danger leave by the quickest route available.</p>
+				</div><div id="73" class="room">
+				<p><strong>73) The Singing Caryatids:</strong> Three Caryatids (columns that are carved as sculptures, in this case as three beautiful nude women) support the lintel over this window. The caryatids are 8 tall and carved from white marble. From the floor to the ledge upon which they stand, the distance is 3. From the outside lawn, the distance is 13. If these sculptures are touched in any way, they will begin to sing beautifully, but loudly. This action will definitely draw the attention of any being in the southern
+				wing of the palace. The singing also has the function that it acts as a <em>Hold Person</em> spell on any creature hearing it for the first time. However, a being listening to it may save as two levels higher. The singing will last 1 full turn and the <em>Hold</em> spell will last the entire duration. There is no way to stop the singing until it is finished, save destroying the statuary.</p>
+				</div><div id="74a" class="room">
+				<p><strong>74A) Storeroom Clerks Office:</strong> Seated at a desk in the north end of this room is a little man, about 40 - 50 years old named Grassus, AC: 9, Move: 12, HD: 1, Damage: Dagger for 1 - 4, HP: 7, STR: 13, INT: 13, WIS: 16, DEX: 12, CON: 14, CHA: 15. He can converse in the tongue of the Tribesmen, Gnollic, Minotaur and can read a smattering of the Thracian language (he can not speak it though). Grassus is the clerk in charge of The Minotaur Kings food stores. He is a trusted slave and he prefers his position with the Beast Men to any possibility of freedom. Given the chance, he will
+				escape and betray any intruders to his masters. If the room is entered, he will be going over the list of stores, written in Thracian, since the Tribesmen have no written language and the Beast Mens tongues are not suited to clerkly material. There will be 2 Gnolls in this room engaged in idle conversation and armed with Swords. AC: 5, Move: 9, HD: 2, Damage: 1 - 8 with Sword, HP: 13, 8. If attacked they will yell for help to come from Room 74 B.</p>
+				</div><div id="74b" class="room">
+				<p><strong>74B) Storeroom:</strong> This is the palaces food warehouse. The walls are lined with shelves that are packed with urns, amphorae and boxes containing various foodstuffs. Items included will be: grain, wine, olive oil, dried meat (beef and Human), hard cakes, honey, nuts, flour, wild rice, spices, salt, dried fruit (apples and pears) and onions. The secret doors will be visible if the pile of boxes containing dried figs is moved. Guarding this room and supervising the Human slaves who are taking inventory
+				are a patrol of 6 Gnolls, AC: 5, Move: 9, HD: 2, Damage: Morning Stars for 1 - 8, HP: 11 (x2), 9, 8, 5, 14, and a Dog Brother named Wuffletree, AC: 6, Move: 12, HD: 4, Damage: Bite for 1 - 4 plus 2 Daggers for 1 - 4 each, HP: 13, spells: <em>Charm Person, Detect Magic, Hold Portal, Sleep, Phantasmal Forces, Pyrotechnics, Haste Spell</em>. Wuffletree values his hide in the extreme and if faced with a with certain death (or even the possibility of death), he will surrender or flee.</p>
+				</div><div id="75" class="room">
+				<p><strong>75) Lair of the Minotaur King:</strong> This is the chamber that the King of the Beast Men calls home. It is high ceilinged and lit both by sky-lights and by the fire that 3 Minotaur heifferettes, paragons of bovine beauty, are tending upon which turns a spit containing the roasted carcass of a Human female. Running about the room will be 2 small Minotaur calves, butting and playing. There is a 1 0% chance
+				that the Minotaur King will be in here (see Room 72). Minotaur Females: AC: 6, Move: 12, HD: 5, Damage: Butt for 2 - 8, Bite for 1 - 3 and/or Carving Knife for 1 - 6, HP: 29, 28, 20. The largest of the Minotaur Cows is the mother of the two calves and will fight berserkly (+2 hit probability and +10 hit points). The smallest Cow has a fairly high intelligence and has been taught to function as a 2nd level Magic User, using <em>Charm Person (x2)</em>. The Minotaur Calves will attack immediately anything Human that does not resemble a slave and even then, they will roughhouse that person. The calves are only semi-intelligent and are always hungry. Calves: AC: 6, Move: 9, HD: 3, Damage: Butt for 1 - 6 points of damage and Bite for 1 - 2, HP: 13 (x2).</p>
+				<p>The room is furnished with several stone benches draped with furs. One of the benches is actually a chest containing 1000 GP, and a Potion of Heroism.</p>
+				<p>The secret doors to the temple are not secret from this side. However, they are trapped. If the stone face in the center of the right hand door is not spun so that it is upside down when the door is opened, a hail of large rocks will be dropped on top of victims for 4 - 24 points of damage each (no saving throw).</p>
+				</div><div id="76" class="room">
+				<p><strong>76) Stairway into the Dungeons:</strong> This stair leads down into the dungeons and lower recess of the palace itself. Since the Beast Men took over, the stair has been rigged with a pair of traps firing 3 Spears each (see Room 76 on Level 4 Map). These traps are maintained regularly and were set up to keep slaves from escaping this way or from bothering the Manticores in Room 94. The traps will be fired off horizontally to hit chest high at the point marked on the map. They will hit as if thrown by a heavy Crossbow being fired by an 8th level fighter. Any, repeat, any noise in this stair will alert the manticores to the presents of visitors. The manticores will then prepare an ambush if the correct password is not spoken. (Determine password in effect below.)</p>
+				<h3>Passwords</h3>
+				<ol>
+				<li>The Rocks Bleed Black Blood</li>
+				<li>Dead Men Tell No Tales</li>
+				<li>Speak the Spell</li>
+				<li>Kill the Humans</li>
+				<li>Lost Lairs of the Lizard King</li>
+				<li>Thanatos is Dead</li>
+				</ol>
+				<p>If the password is spoken, the Manticores will judge the speaker to be alright. The commander of each patrol of all the different species will know the password.</p>
+				</div><div id="77" class="room">
+				<p><strong>77) Pool of Watery Wonders:</strong> While this is not a magic pool, in and of itself, it can be used to work magical wonders. The pool was originally a bath and is still heated from below. The water is 120 degrees Fahrenheit and the room is filled with water vapor. The floor is tiled with glazed ceramic and set in various aquatic designs portraying fish, nymphs sea gods and sea monsters. Occasionally it is still used for this purpose by the Minotaur Cows in Room 75. It has a second purpose, much more
+				arcane though. Located at the 4 cardinal points of the compass (N, E, S, W) are 4 white, marble bowls mounted on 3 tall pillars of black marble. The bowls are empty, but there is writing in magic on the rim of each bowl. The bowls are magic devices, using the water from the pools to power them. The Minotaur King knows the function of them, but he has never used any of them. If necessary to protect his domain, he will. The Dog Brother, Wuffletree, has used all functions of the pool (including bathing) except for its <em>Conjure Elemental</em> power.</p>
+				<p>North Bowl: This bowls writing describes the process for summoning a water elemental. The process requires filling the bowl with water from the pool and speaking the proper ritual. The process will summon in one turn a 12 HD water elemental that will use all the water in the pool to form itself. AC: 2, Move: 6, HD: 12, Damage: 3 - 30, HP: 53. It is immune to non-magic weapons.</p>
+				<p>East Bowl: The writing on this bowl describes a process by which the person casting the listed spell may cause the bowl to operate as a <em>Locate Object</em> spell of unlimited range (unlimited as far as the dungeon is concerned, it will not work on anything outside of the caverns). Once the water is magicked, a needle or pointer will seem to appear on the surface of the liquid and point in the direction of the desired object, even pointing up or down. The bowl is designed so that the water may be poured off into a different vessel and thus become portable. Once the item is found, the water
+				vaporizes (doing 1 - 3 points of damage to who ever is holding the bowl or container, unless they are protected from heat damage). Spell will last 1 - 6 hours.</p>
+				<p>South Bowl: This bowl will function as a special clairvoyance spell when properly magicked. It will reveal any desired location within the caverns of Thracia. It will reveal up to 4 separate locations (if a random room is asked for or if no specific room is desired, roll on a d 1 00 and check the room indicated). The room desired will appear in the large pool.</p>
+				<p>West Bowl: This bowl is the teleportation bowl. It specifies that for it to work, the south bowl must first be activated and a destination determined (you see, it only works inside the caverns and provides a one-way trip). Then the east bowl must be brought into function and the locate object power brought to bear on the room depicted on the pool. At this point the teleportation unit is primed and the image in the pool will disappear. As long as there is water in the three bowls and the pool it will stay primed. There is a cord on the underside of the west bowl that will open up a drain in the bottom of the vessel. Once pulled the bowl will drain in 1 melee round. The teleport is activated by jumping into the 4 deep pool. The jumper will then arrive, slightly damp, at the predetermined site. If neither the clairvoyance bowl, nor the locate bowl is used then a random destination will be determined and those entering the pool will be sent there. However, there will be an error factor of 1- 10 involved. See below.</p>
+				<p>A roll on the percentile die of 01 - 50% indicates that teleportees reached their destination with an error factor of no more than 1 - 6 too high, incurring no damage as they land, only a lack of initiative if placed in a problem situation (subtract 1 point from initiative roll for each inch that. a teleportee lands too high). A roll of 51 - 90% indicates that the teleportees came in 1 - 20 too high and a resultant drop will do damage equal to 1 d6 per 1 0 of fall. Also, victims may lose a chance for an initiative roll (this is up to the referee) if they are dropped into a situation requiring such a roll to be made.</p>
+				<p>A roll of 91 - 00% indicates that the victim has come in too low by 1 - 1 0. This could have several possible results (mostly instant death) and it should be up to the referee to determine those results on the situation involved.</p>
+				<p>The only escape from death when a limb or limbs are partially entrapped is by immediate severance of the trapped member, but this should be up to the referee.</p>
+				<p>Back to the bowls. Removing them will destroy their power.</p>
+				<p>A water elemental may be sent through the teleport by setting up the teleport and then creating the elemental who will then be sent to the desired location, emptying the pool of all water. This is one way in which the Minotaur King might wreak revenge on intruders. Set up the locate so that it shows the offending party, wherever he, she or they are, and send the elemental through to them, maintaining control by viewing the scene in the clairvoyance bowl. The water in the pool will refill
+				in three turns.</p>
+				</div><div id="78" class="room">
+				<p><strong>78) Weapons Room of the Dog Brothers:</strong> This is a once ornate room that has ratty drapes that hang from the ceiling down to about 1 0 from the floor. The drapes are torn and ragged (what remains of them) and all color has either faded from them or is covered by dense soot. The ceiling and upper walls are also coated with a thick layer of carbon black. The room is lit by light filtering in from the skylights in the ceiling and from the campfire in the south end of the room. Several shields of tribesmen make hang from the walls and in the northeast corner is a pile of weapons containing a stone mace, a bronze sword, a morning star, a two-handed sword (broken at the hilt, it is in two pieces) and a spiked ball off of another morning star. Two lizard men will be practicing with weapons while a third looks on. Lizard men: AC: 4, Move 6, HD: 2 + 1, Damage: club for 1-8, 4 darts at 1-4 each, HP: 11, 13, 10. The heavy wooded doors on the east wall are barred from the other side to prevent entry.</p>
+				</div><div id="79" class="room">
+				<p><strong>79) Lush Lair of a Dog Brother:</strong> The short hall connecting rooms 79 &amp; 80 is dark except for a flickering candle stuck in a sconce at the east end of the corridor. The door to room 79 is ornately carved with images of goddesses and concubines. The room itself is illumed by a pair of candles that glow with continual light. If other portions of the palace are grim and devoid of finery, then here it must all be collected. Rich, bright tapestries hang on the walls, depicting the goddess of love and her paramours. The floor is covered with a deep luxurius carpet of brilliant color. The east end of the room is deep with cushion and furs. A low table at the west end is set with artfully cut crystal ware. There are ripe fruits set out and on the table is a huge roast of beef, seemingly simmering with juices. The table is magic. It will conjure up enough food to feed eight people daily. The food will always be different from day to day and it will be rich and tasty. (<em>Create Food</em> spells were never like this!!) The table is delicate. If dropped it will splinter and break. Its weight, at most, is no more than 250gp and it is 3 x 3 x 2. There is a 25% chance that it will still function, but that the food it produces will be foul tasting or foul looking and have a 40% chance of being poisonous.</p>
+				<p>Two female dog brothers named Spittletongue and Sniffletail (dog sisters in this case) will be in this chamber. One will be eating at the table, the other will be giving suck to a litter of 6 pups.
+				AC: 6, Move 12, HD: 4, Damage: bite for 1-4 +1, dagger for 1-4, HP: 18, 18. The pups are AC: 9, HD: ½, HP: 5, 5, 5, 5, 5, 5.</p>
+				</div><div id="80" class="room">
+				<p><strong>80) A Second Lush Lair:</strong> This room is much the same as room 79. The door into it is carved with scenes of passion. The room itself is hung with ornate draperies, sewn and stitched artfully with gold and silver thread. The floor is thickly carpeted and cushions lie about everywhere. There is a tray of food on the floor containing 4 goblets of wine, a huge portion of roast beef and several spice cakes. A dog brother, Wark, AC: 6, Move: 12, HD: 4, Damage: sword for 1-8 and bite for 1-4, HP: 20, is being entertained by a trio of comely (to another dog brother) young dog sisters, Flashtail, Prettyclaws and Pinkfang, AC: 6, Move: 12, Damage: bite for 1-4, HD: 4, HP: 26,19, 25. There is a chest against the north wall covered by furs containing 8000 CP and 2000 GP.</p>
+				</div><div id="81" class="room">
+				<p><strong>81) A Gnollic Guardpoint:</strong> Ever watchfull at this point are a squad of 6 gnolls, AC: 5, Move 9, HD: 2, Damage: two-handed swords for 1-10, HP: 9, 8, 7, 10, 10, 6. The air in this room, besides being permeated with the odor of raunchy gnoll, smells heavily of cooked food. Each gnoll will have 4 SP &amp; 2 GP on his person. A fracas in here will draw wary minotaurs from room 82.</p>
+				</div><div id="82" class="room">
+				<p><strong>82) Kitchen:</strong> This steamy, warm room is the kitchen for the bulk of the troops living in the palace. The food cooked here is neither eye-appealing nor taste-tempting. It all looks like a grey mush with greasy lumps floating in it. If it can be gagged down, it will serve as rations. The stuff will, also, keep for up to a week, then it will begin to get moldy (which actually seems to improve the taste, even though eating it then will cause the botulinum-a form of food poisoning). Tending the kitchen are 6 human slaves. The slaves have never known any other life than living in the palace. They speak the language of tribesmen and gnollic. They are AC: 9, Move: 9, HD: ½, Damage: 1-2 or by weapon type, HP 1, 2, 4, 4, 3, 3. They are as follows: 2 attractive young females, a male child, an old woman and a young man. These particular slaves sleep here at night (a dimming of the overhead lights). They will be scared out of their wits by intruders. Guarding the slaves and the kitchen from invasions of hungry residents are a pair of minotaurs aptly named Moos and Horni, AC: 5 (skin &amp; shield), Move: 12, HD: 6, Damage: Butt for 2-8, bite for 1-3 or battle axe for 1-10, HP: 35, 31. These boys do not fight in silence and will moo for all theyre worth while fighting. This will begin to draw at least one party of wandering monsters and should draw all troops within 50 into the fray.</p>
+				</div><div id="83" class="room">
+				<p><strong>83) Office of the Guard:</strong> This is the cheif guardroom and in it will be the commanders of the various beast-men, discussing placement of guards, expansion of patrols and procurement of more slaves and supplies. Gradsh, commander of the gnolls, AC: 5, Move: 9, HD: 2, Damage: two-handed sword for 1-10, HP: 16, Bullick, chief of the minotaurs and second in command only to the minotaur king (also his oldest son), AC: 6, Move: 9, HD: 6, Damage: battle axe for 1-12, HP: 43. Barkbite, hetman of the dogbrothers, AC: 4, Move: 12, HD: 4, Damage: sword for 1-8 and/or bite for 1-4, HP: 30. Hssssdk, warleader of the lizard men mercenaries, AC: 4, Move: 6/12(swimming), HD: 2 + 1, Damage: sawtoothed club for 2-9, 4 darts for 1-4 each, HP: 16.</p>
+				<p>There will be a gnoll guard, AC: 5, Move 9, HD: 2, Damage: halberd for 1-10, HP: 11, 14 at each of the doors to the hall. They will be inside the 83 area (the halls, not the room) with their backs against the east wall, facing west very alert.</p>
+				<p>In this room will be a locked case containing the valuables of the commanders. The case will contain 4000 CP and 2000 GP, in small bags of 100 coins each. There will be crude maps of the dungeon complex known to the beast-men rolled up on a desk. The maps will include portions of the first, second, third and forth levels, but no secret areas or sublevels will be indicated.</p>
+				</div><div id="84" class="room">
+				<p><strong>84) Beam of Blasting Light:</strong> This room is a large dome, 50 in diameter and 40 from floor to peak. Although there is no hole in the ceiling, there appears to be a shaft of sunlight coming out of the ceiling. The light forms a 1 0 diameter circle on the floor, directly in front of the secret door. The sound of light sizzling can be heard. Chained in the center of the floor and spread-eagled, face up, is a 4th level tribesman cleric named Holoste. He was captured by a lizard men patrol and was the only member of his band not to be tom apart and eaten. He is AC: 9, Align: LE, Move: 12, HD: 4, damage: by weapon type, HP: 21, Spells: <em>Cure Light Wounds, Protection from Good, Find Traps</em>. His group was caught on level 2 in room 31. The shaft of light is slowly moving down the wall and has reached the floor, moving at a rate of 5 per tum. In three turns the light will be falling on Holoste. The light does 8D6 of damage every round. The light causes intense heat. A saving throw vs dragon breath will save the victim from half the damage. There will be 3 gnoll cubs waiting for Holoste to die (see room 87).</p>
+				</div><div id="85" class="room">
+				<p><strong>85) An  Empty Room:</strong> Yes! In every dungeon complex there has to be at least one. A room with nothing interesting in it. A space to rest momentarily from pursuit. A place no monster would think to look. This is one of those places. Except for a giant pair of baleful, glowing amber-colored eyes on the north wall and secret doors hidden in the east, west, and south walls, disguised as unadorned marble panels, there is nothing here. Did I mention that the eyes radiate a definite feeling of evil and
+				seem to chill the very soul? Well, they do. Any character staying in this room more than 3 melee rounds must save vs magic or he will think he is being paralyzed (a delusion).</p>
+				</div><div id="86" class="room">
+				<p><strong>86) Hall of Harrowing Hands:</strong> (Actually this is a stairway, but stair isnt alliterative with hands) When this room is entered, the walls will seem to sprout hands on long arms. The hands will be the temperature of rock but will be fairly soft. All they will do is feel anything passing through them. The walls on both the east and west sides of the stair will sprout hands for a distance of 20 down the stairway. The hands are harmless unless they are attacked (AC: 8, Move: 0, HD: ½, Damage: attack as 4 hit dice monsters for 1-4 each, HP: 2 (x 70)). Each 10 section of wall will contain 10 hands. The arms telescope and can reach 6 out into the stairwell. Fire will not harm the hands, but a fireball will paralyze them for 1-4 melee rounds. Once the hands have been irritated, they will not calm down for 12 turns and will try to attack anything trying to pass through at that time. (2-8 will attack each person each round.) They will continue to remain agitated for 2 hours after every encounter in which they are damaged or attacked.</p>
+				</div><div id="87" class="room">
+				<p><strong>87) Habitat of Gnoll Females and Cubs:</strong> Whatever this room may have served for before, it is now the home for 20 female gnolls, AC: 7, Move: 9, HD: 2, Damage: 1-8 or by weapon type, HP: roll as necessary. These gnoll bitches will normally not attack if the room is entered. Nor will they get upset if a cub is killed. However, if the females themselves are attacked or intruders begin a wholesale slaughter of the young, they will attack and fight to the death. Along with the females are 35 cubs that are from a few weeks old to almost a year old. The gnoll matures quickly and within four and a half years they are full grown and capable of reproducing. The cubs are AC: 7, Move: 8, HD: ½, Damage: bite for 1-3, HP: roll as necessary. Roll a d6 to determine size. A 1-3 indicates hit dice are d4s. A 4-5 indicate full d8s and a roll of 6 indicates an almost full-grown youngster who ought to be in military training with 1 + 1 hit dice.</p>
+				</div><div id="88" class="room">
+				<p><strong>88) The Inner Habitat:</strong> These are the older gnoll matrons whose wisdom rules this small tribe. Gnoll males only know how to bully and fight, so the females must control the society, allowing the males to think they are in control and making the decisions. There are 6 old gnoll females in here, AC: 7, Move: 6, HD: 2, Damage: bite for 1-3, HP: 12, 11, 2, 9, 14, 8. They will have 3 or 4 young cubs, HD: ½ in the room with them. In a box in the NE corner (an old gnoll is sitting on it) are 1000 GP and 5 small semi-precious stones - four 100 GP ambers and one 50 GP turquois.</p>
+				</div><div id="89" class="room">
+				<p><strong>89) Temple of Teleportation:</strong> This is yet another temple area in the palace. The 10 square patterned area on the map represents a 3rd teleportation pad that will take troops directly to the pad in room 54. In baskets to either side of the pad are small glass marbles. If one of these marbles is carried on the pad and the pad in room 45 is activated, the teleportee will be transported to room 45 instead of room 54. For safetys sake, none of the troops garrisoned on the first and second levels carry these marbles Guarding this area are 4 warrior minotaurs, AC: 6, Move: 12, HD: 6, Damage: butt for 2-8, bite for 1-3 or battle axe for 1-10, HP: 32, 25, 23, 34. The upper reaches of the walls are decorated with friezes of titanic battles between beast-headed men and heroic gods and goddesses. Located at the north and south ends of the room are piles of rubble that appear to have once been statues.</p>
+				</div><div id="90" class="room">
+				<p><strong>90) Connecting Hall:</strong> This short hall connects the three gnollic warrior barracks together. There is a 50% chance that a single guard will be on duty here at all times. AC: 5, Move: 9, HD: 2, Damage: 1-6 with crossbow and 1-8 with morning-star, HP: 11.</p>
+				</div><div id="91" class="room">
+				<p><strong>91-93) The Barracks of the Gnoll Guards:</strong> These three rooms house the warlike male gnolls of the tribe. Each room quarters approximately 20 gnolls (patrols are in and out so often that it is never certain where a specific gnoll will be at a given time). They just sleep here when off duty on this level. Because of the transient nature of the occupants, there will be no treasure in this room, except what is on the person of the individual creatures. Each room will have from 6-11 occupants in it at all times. Gnolls are AC: 5, Move: 9, HD: 2, Damage: 1-8 or by weapon type, HP: roll as necessary. At least 60% of the rooms occupants will be asleep. The remainder will be eating and gambling for personal stakes. Each gnoll will have from 1-12 SP and 1-8 GP. In the southeast corner of room 93 is a 5 square secret trapdoor on the floor. It opens on a 5 square shaft with stone walls and rungs set into the stone. It goes downward 70 to room 115. This trapdoor is hidden from view by a pile of ratty sleeping rags.</p>
+				</div>
+			</div>
+			<div id="separator" ></div>
+			<div id="second" >
+				<div id="top-button-row">
+					<button class="top-button" onclick="window.location.href='CoT-0-viewer.html';">Surface</button>
+					<button class="top-button" onclick="window.location.href='CoT-1-viewer.html';">Level 1</button>
+					<button class="top-button" onclick="window.location.href='CoT-2-viewer.html';">Level 2</button>
+					<button class="top-button" onclick="window.location.href='CoT-3a-viewer.html';">Level 3a</button>
+					<button class="top-button" onclick="window.location.href='CoT-3-viewer.html';"><strong>Level 3<strong></button>	
+					<button class="top-button" onclick="window.location.href='CoT-4-viewer.html';">Level 4</button>
+				</div>
+				<div id="zoom-buttons">
+					<button class="zoom-button" onclick="zoomIn()"><strong>+</strong></button>
+					<button class="zoom-button" onclick="zoomOut()"><strong>-</strong></button>
+				</div>
+				<svg id="map_svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1930 1192">
+				  <image width="1930" height="1192" xlink:href="CoT-3.JPG"></image> <a xlink:href="#54">
+					<rect x="1618" y="423" fill="#fff" opacity="0" width="100" height="100" onclick="ScrollToEntry('54')"></rect>
+				  </a><a xlink:href="#55">
+					<rect x="1746" y="580" fill="#fff" opacity="0" width="50" height="50" onclick="ScrollToEntry('55')"></rect>
+				  </a><a xlink:href="#56">
+					<rect x="1678" y="716" fill="#fff" opacity="0" width="173" height="148" onclick="ScrollToEntry('56')"></rect>
+				  </a><a xlink:href="#57">
+					<rect x="1646" y="910" fill="#fff" opacity="0" width="116" height="143" onclick="ScrollToEntry(''57)"></rect>
+				  </a><a xlink:href="#58">
+					<rect x="1379" y="806" fill="#fff" opacity="0" width="166" height="181" onclick="ScrollToEntry('58')"></rect>
+				  </a><a xlink:href="#59">
+					<rect x="1340" y="543" fill="#fff" opacity="0" width="155" height="146" onclick="ScrollToEntry('59')"></rect>
+				  </a><a xlink:href="#60">
+					<rect x="1462" y="366" fill="#fff" opacity="0" width="112" height="116" onclick="ScrollToEntry('60')"></rect>
+				  </a><a xlink:href="#61">
+					<rect x="1709" y="345" fill="#fff" opacity="0" width="141" height="100" onclick="ScrollToEntry('61')"></rect>
+				  </a><a xlink:href="#62">
+					<rect x="1606" y="238" fill="#fff" opacity="0" width="138" height="100" onclick="ScrollToEntry('62')"></rect>
+				  </a><a xlink:href="#63">
+					<rect x="1597" y="35" fill="#fff" opacity="0" width="126" height="131" onclick="ScrollToEntry('63')"></rect>
+				  </a><a xlink:href="#64">
+					<rect x="1480" y="129" fill="#fff" opacity="0" width="145" height="146" onclick="ScrollToEntry('64')"></rect>
+				  </a><a xlink:href="#65">
+					<rect x="1336" y="211" fill="#fff" opacity="0" width="146" height="113" onclick="ScrollToEntry('65')"></rect>
+				  </a><a xlink:href="#66">
+					<rect x="1266" y="114" fill="#fff" opacity="0" width="178" height="82" onclick="ScrollToEntry('66')"></rect>
+				  </a><a xlink:href="#67">
+					<rect x="1115" y="537" fill="#fff" opacity="0" width="150" height="124" onclick="ScrollToEntry('67')"></rect>
+				  </a><a xlink:href="#67a">
+					<rect x="1116" y="665" fill="#fff" opacity="0" width="146" height="527" onclick="ScrollToEntry('67a')"></rect>
+				  </a><a xlink:href="#67a">
+					<rect x="1113" y="22" fill="#fff" opacity="0" width="157" height="515" onclick="ScrollToEntry('67a')"></rect>
+				  </a><a xlink:href="#69">
+					<rect x="727" y="622" fill="#fff" opacity="0" width="379" height="424" onclick="ScrollToEntry('69')"></rect>
+				  </a><a xlink:href="#68">
+					<rect x="807" y="746" fill="#fff" opacity="0" width="237" height="222" onclick="ScrollToEntry('68')"></rect>
+				  </a><a xlink:href="#70">
+					<rect x="453" y="403" fill="#fff" opacity="0" width="232" height="351" onclick="ScrollToEntry('70')"></rect>
+				  </a><a xlink:href="#71">
+					<rect x="173" y="514" fill="#fff" opacity="0" width="278" height="144" onclick="ScrollToEntry('71')"></rect>
+				  </a><a xlink:href="#74b">
+					<rect x="376" y="889" fill="#fff" opacity="0" width="100" height="100" onclick="ScrollToEntry('74b')"></rect>
+				  </a><a xlink:href="#72">
+					<rect x="263" y="652" fill="#fff" opacity="0" width="113" height="313" onclick="ScrollToEntry('72')"></rect>
+				  </a><a xlink:href="#74a">
+					<rect x="449" y="894" fill="#fff" opacity="0" width="50" height="50" onclick="ScrollToEntry('74a')"></rect>
+				  </a><a xlink:href="#73">
+					<rect x="480" y="892" fill="#fff" opacity="0" width="50" height="113" onclick="ScrollToEntry('73')"></rect>
+				  </a><a xlink:href="#75">
+					<rect x="381" y="761" fill="#fff" opacity="0" width="93" height="84" onclick="ScrollToEntry('75')"></rect>
+				  </a><a xlink:href="#75">
+					<rect x="377" y="657" fill="#fff" opacity="0" width="50" height="100" onclick="ScrollToEntry('75')"></rect>
+				  </a><a xlink:href="#76">
+					<rect x="208" y="683" fill="#fff" opacity="0" width="50" height="314" onclick="ScrollToEntry('76')"></rect>
+				  </a><a xlink:href="#77">
+					<rect x="528" y="761" fill="#fff" opacity="0" width="111" height="112" onclick="ScrollToEntry('77')"></rect>
+				  </a><a xlink:href="#78">
+					<rect x="531" y="875" fill="#fff" opacity="0" width="51" height="112" onclick="ScrollToEntry('78')"></rect>
+				  </a><a xlink:href="#79">
+					<rect x="587" y="877" fill="#fff" opacity="0" width="50" height="50" onclick="ScrollToEntry('79')"></rect>
+				  </a><a xlink:href="#80">
+					<rect x="584" y="950" fill="#fff" opacity="0" width="55" height="50" onclick="ScrollToEntry('80')"></rect>
+				  </a><a xlink:href="#81">
+					<rect x="214" y="447" fill="#fff" opacity="0" width="87" height="59" onclick="ScrollToEntry('81')"></rect>
+				  </a><a xlink:href="#82">
+					<rect x="217" y="368" fill="#fff" opacity="0" width="88" height="80" onclick="ScrollToEntry('82')"></rect>
+				  </a><a xlink:href="#83">
+					<rect x="338" y="388" fill="#fff" opacity="0" width="50" height="91" onclick="ScrollToEntry('83')"></rect>
+				  </a><a xlink:href="#84">
+					<rect x="249" y="214" fill="#fff" opacity="0" width="145" height="152" onclick="ScrollToEntry('84')"></rect>
+				  </a><a xlink:href="#85">
+					<rect x="249" y="159" fill="#fff" opacity="0" width="139" height="50" onclick="ScrollToEntry('85')"></rect>
+				  </a><a xlink:href="#86">
+					<rect x="196" y="168" fill="#fff" opacity="0" width="50" height="195" onclick="ScrollToEntry('86')"></rect>
+				  </a><a xlink:href="#87">
+					<rect x="455" y="172" fill="#fff" opacity="0" width="85" height="73" onclick="ScrollToEntry('87')"></rect>
+				  </a><a xlink:href="#88">
+					<rect x="391" y="170" fill="#fff" opacity="0" width="57" height="77" onclick="ScrollToEntry('88')"></rect>
+				  </a><a xlink:href="#89">
+					<rect x="539" y="170" fill="#fff" opacity="0" width="104" height="231" onclick="ScrollToEntry('89')"></rect>
+				  </a><a xlink:href="#90">
+					<rect x="406" y="296" fill="#fff" opacity="0" width="133" height="50" onclick="ScrollToEntry('90')"></rect>
+				  </a><a xlink:href="#91">
+					<rect x="413" y="350" fill="#fff" opacity="0" width="124" height="50" onclick="ScrollToEntry('91')"></rect>
+				  </a>
+				</svg>
+				
+			</div>
+		</div>
+		<script>
+
+			function zoomIn() {
+				var e = document.getElementById('map_svg');
+				var width = e.style.width;
+				if (width == '') {
+					width = '110%';
+				}
+				width.replace("%", "");
+				width_int = parseInt(width);
+				width_int = width_int + 10;
+				e.style.width = width_int.toString() + '%';
+				
+			}
+
+			function zoomOut() {
+				var e = document.getElementById('map_svg');
+				var width = e.style.width;
+				if (width == '') {
+					width = '110%';
+				}
+				width.replace("%", "");
+				width_int = parseInt(width);
+				width_int = width_int - 10;
+				e.style.width = width_int.toString() + '%';
+				
+			}
+
+			function ScrollToEntry(anchor) {
+				var e = document.getElementById(anchor);
+				rooms = document.getElementsByClassName('room');
+				for (let i = 0; i <  rooms.length; i++) {
+					rooms[i].style.background = "mintcream";
+				}
+				e.style.background = "palegoldenrod";
+			}
+	
+			// A function is used for dragging and moving
+			function dragElement(element, direction)
+			{
+				var   md; // remember mouse down info
+				const first  = document.getElementById("first");
+				const second = document.getElementById("second");
+
+				element.onmousedown = onMouseDown;
+
+				function onMouseDown(e)
+				{
+					//console.log("mouse down: " + e.clientX);
+					md = {e,
+						  offsetLeft:  element.offsetLeft,
+						  offsetTop:   element.offsetTop,
+						  firstWidth:  first.offsetWidth,
+						  secondWidth: second.offsetWidth
+						 };
+
+					document.onmousemove = onMouseMove;
+					document.onmouseup = () => {
+						//console.log("mouse up");
+						document.onmousemove = document.onmouseup = null;
+					}
+				}
+
+				function onMouseMove(e)
+				{
+					//console.log("mouse move: " + e.clientX);
+					var delta = {x: e.clientX - md.e.clientX,
+								 y: e.clientY - md.e.clientY};
+
+					if (direction === "H" ) // Horizontal
+					{
+						// Prevent negative-sized elements
+						delta.x = Math.min(Math.max(delta.x, -md.firstWidth),
+								   md.secondWidth);
+
+						element.style.left = md.offsetLeft + delta.x + "px";
+						first.style.width = (md.firstWidth + delta.x) + "px";
+						second.style.width = (md.secondWidth - delta.x) + "px";
+					}
+				}
+			}
+
+			dragElement( document.getElementById("separator"), "H" );
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,309 @@
+<html>
+	<head>
+		<title>Level 4 - Caverns of Thracia</title>
+		<style>
+
+.splitter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#separator {
+    background-color: #aaa;
+    background-position: center;
+    width: 10px;
+    height: 100%;
+
+    /* Prevent the browser's built-in drag from interfering */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#first {
+    background-color: #dde;
+    width: 30%;
+    height: 100%;
+    min-width: 10px;
+	overflow: scroll;
+}
+
+#second {
+    background-color: #fff;
+    width: 70%;
+    height: 100%;
+    min-width: 10px;
+	overflow: scroll
+}
+
+#top-button-row {
+	position: fixed;
+	
+}
+
+#zoom-buttons {
+	position: fixed;
+	right: 10px;
+	
+}
+
+#map_svg {
+	width: 100%;
+}
+
+.top-button {
+	background-color: #5081a9;
+	border: none;
+	color: white;
+	padding: 8px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.zoom-button {
+	background-color: #5081a9;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.room {
+	background-color: mintcream;
+
+}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="splitter">
+			<div id="first">
+		
+				<h1>Level Four</h1>
+				<div id="94" class="room">
+				<p><strong>94) The Manticores:</strong> These are the two manticores mentioned in stairway 76. If any noise is made while while descending the stair, the manticores will be alerted and will wait for a password (see 76) to be spoken. If the word is not spoken or is incorrect, they will attack, surprising on a d6 roll of 1-4, with volley of spikes. The manticores are AC: 4, Move: 12/18, HD: 6 + 1, Damage: 2 claws for 1-3 each
+				and bite for 1-8 and 24 spikes for 1-6 each, HP: 41, 38.</p>
+				<p>The ceiling of the room is 30 high and the walls are decorated with flaking wall paintings of sumptuous banquets and expansive gardens. There are a few rotting wood couches strewn about the room and some shattered marble slabs may have been tables. This was once a banquet hall. Leaning up against the north wall are 6 heavy ceramic urns. Each contains approximately 660 gold pieces. At the bottom of urns 1 and 5 are potion bottles. Number 1 is a potion of Hill Giant control while number 5 is polymorph self. In urn 6 is a +2 chaotic evil sword with a dark blue blade.</p>
+				</div><div id="95" class="room">
+				<p><strong>95) A Vacant Chamber:</strong> The walls of the room are carved with bas-relief friezes of men fighting beasts of all sorts. Both doors out of (or into) this room are locked. If entered from the south or east there is a 25% chance that 1 or both manticores from room 94 will be in here.</p>
+				</div><div id="96" class="room">
+				<p><strong>96) A Lizard Men Guardpost:</strong> There will be 4 lizard men, AC: 4, Move: 6, HD: 2+1, Damage: club for 1-8, 4 darts for 1-4 each, HP: 8, 10, 11, 14. The heavy oak doors into this room are barred from the inside and will be -2 on breaking down. If more than one assault is made on a door, there will be 8 extra lizard men from room 97 waiting to do battle.</p>
+				</div><div id="97" class="room">
+				<p><strong>97) The Bilious Boiler Room:</strong> This is the source of the hot water in the various pools and basins on this level of the Palace. The boiler is a huge bronze contraption that is fired by wood placed in a firebox beneath it. The room is full of smoke and steam. Working the great pump bellows are 10 slaves while another 2 slaves feed wood into the firebox. Pipes lead up to the pools and are controlled by two large valves. Guarding this room are 10 lizard men, AC: 4, Move: 6, HD: 2+1, Damage: clubs for 1-
+				8 and 4 darts for 1-4 each, HP: 7, 7, 7, 7, 11, 6, 4, 5, 9, 13. If these lizard men go into combat with intruders, at least 2 will always stay guard on to prevent any escape of the slaves. The slaves are all male and in pretty sorry shape, AC: 9, Move: 9, HD: ½, Damage: by weapon type only, HP: roll as necessary. The boiler is AC: 3 and it will require 25 hit points at any given location to puncture it. If the water is spilled out, it will do at least 1d8 of damage to any creature it touches (heat damage) for 2 melee rounds thereafter.</p>
+				</div><div id="98" class="room">
+				<p><strong>98) The Guard at the Pipe:</strong> A single lizard man guards this pipe from damage and inspects for possible leaks. While it is not smokey down at this point, it is still steamy (the lizard men enjoy that). The lizard man is AC:4, Move: 6, HD: 2+1, Damage: club for 1-8 and 4 darts for 1-4 each, HP: 11.</p>
+				</div><div id="99" class="room">
+				<p><strong>99) Barracks of the Lizard Men Mercenaries:</strong> At any given time there will be 3-12 lizard men in this chamber, resting and devouring various disgusting foodstuffs. If surprized it will take them at least a full melee round to arm themselves. The lizard men are AC: 5 (they will not have shields immediately handy), Move: 6, HD: 2+1, Damage: 2 claws for 1-3 each and a bite for 1-8 or club for 1-8, HP: roll as necessary.</p>
+				</div><div id="100" class="room">
+				<p><strong>100) Shrine of the Ancient Ones and Treasure Vault:</strong> This is the worship area of the lizard mercenaries. It is a form of ancestor worship. Over the centuries, the lizards have discovered various treasures and items that are both valuable and related to the ancient lizard culture that once existed. A simple stone carving of a lizard man is set up on a short piece of marble pillar and has flayed human skin draped over it. The eyes are mismatched, though. The left eye is a 1000 GP peridot and the right eye is a 5000 GP sapphire. Elsewhere on the carving there is a 500 GP jade stone and a 10 GP amber chip. On a tray in front of the small altar there rests two potions and a rolled scroll of some ancient, tough skin (possibly dinosaur hide). One of the potions is human control and the other invisibilty. The scroll has a curse on it and will polymorph the opener into a small, extinct reptile, AC: 6, Move: 12,
+				HD: 1, Damage bite for 1-3, HP: 7 and unintelligent. A saving throw against magic is applicable. To read the scroll a <em>Read Languages</em> spell is necessary. It is a map that will lead to the location of the grand temple of the reptile race. It will only show the location of the door into the area from 53 and will, also, reveal the entrance to that chamber.</p>
+				<p>This shrine is guarded by a pair of fanatic lizard men, AC: 4, Move: 6, HD: 2+1, Damage: club for 1-8 and 4 darts for 1-4 each, HP: 8, 8. Both lizardmen know the function of the human control potion and will attempt to drink it if they are attacked. They do not know the function of the other potion, but are aware that the map is a great artifact, even though they do not know what it is. Stealing the shrine or its gems will cause every lizard man. mercenary to desert his post and come looking for the thieves. Within 15 turns of the theft, they will have used the pool in room 77 through the help of one of the dog brothers, and from 5-25 lizard men will teleport directly to the location of the gems and fight like berserkers to the death to regain their holy object. This will continue once every 4 turns until a total of 60 lizard men have been killed or the shrine and its valuables are returned.</p>
+				</div><div id="101" class="room">
+				<p><strong>101) Green Slime Garderobe:</strong> garderobe is a medieval version of indoor plumbing. This room and 30 of the connecting hallway are coated in a thick, juicy layer of green slime (harmless). On the north wall of the room itself, in the center of that wall, it appears that there may be a door. There is not a door, it just looks like there might be one.</p>
+				</div><div id="102" class="room">
+				<p><strong>102) The Mysterious Missing Chamber:</strong> Look as you might you will not find this room on the map. It never was there and exists only in the mind of the designer, who refuses to admit that he may have made an oversight when numbering his creation and doesnt feel like sticking the number 102 somewhere on the map and letting it go like that.</p>
+				</div><div id="103" class="room">
+				<p><strong>103) The Cells of the Tribesman Slaves:</strong> All the tribesmen will be AC: 9, Move: 9, HD: ½, Damage: by weapon type only, HP: roll as necessary. During the Daylight hours, there will only be 1-2 slaves in each cell and they will be older ones. At night, all slaves will be in. They are taken to their various jobs around the palace up through room 97 over to stair 76 and into the throne room. Old slaves, useless to their masters, are left behind to take care of the cells.</p>
+				<p>A. 5 slaves: 3 men, two women<br />
+				B. 4 slaves: 1 man, 2 old women, 1 girl<br />
+				C. 5 slaves: 3 men, 1 woman, 1 boy<br />
+				D. 4 slaves: 1 man, 3 old women<br />
+				E. 5 slaves: 2 men, 2 women, 1 old man<br />
+				F. 6 slaves: 1 man, 3 women, 1 old woman, 1 boy<br />
+				G. 5 slaves: 2 women, 1 old man, 1 boy, 1 girl</p>
+				</div><div id="104" class="room">
+				<p><strong>104) The Torture Chamber:</strong> Although this area is not normally used, captured adventurers will be brought here and placed into 104A. The door is solid oak and locked. All possessions will be placed in 104B except for items of obvious value which the gnolls and dog brother in charge of this area will place in room 115. The room contains various archaic modes of torture. Very few of them will be as sophisticated as current contraptions but they will do the job. If a character is indeed tortured (a
+				40% chance if they carried any valuables on them or spoke cryptically to their captors or if part of the intruder party got away) a mode of torture will be selected that will reduce a characteristic by 1 point for each full turn the torture is applied. Use this chart to determine the characteristic in a random manner: 1=Strength; 2=Intelligence; 3=Wisdom; 4=Dexterity; 5= Constitution; 6=Charisma; 7=2 characteristics will be affected, reroll; 8= 1 will be affected, but twice as fast, reroll. The application of Cure Serious Wounds will heal 1-2 points of damage but may only be done once and to only 1 characteristic affected, when more than one is. A characteristic that is damaged will naturally heal back 1 point (in a month) but all other loss to that characteristic is permanent unless healed as above. A limited wish would, also, remove damage taken. Thus, if a character was tortured and lost 3 points of intelligence and 4 points of charisma, he would heal back 1 point of each in one months time and a cure critical wounds could reduce the damage further to one of the characteristics by an additional 1-2 points. Note: If Constitution is reduced below 3, the character will die. Characters should be informed each turn that they are tortured that they have lost a certain amount of points. Each time a character is tortured, the affected characteristic should be determined anew.</p>
+				<p>This room is run by Dog Brother Fangfriend, AC: 6, Move: 12, HD: 4, Damage: Sword for 1-8 or Bite for 1-4, HP: 21; and three Gnolls, AC: 5, Move: 9, HD: 2, Damage: Halberds for 1-10, HP: 6, 11, 8. They know of their secret treasure secreted away in Room 115. If they are tortured or threatened with loss of life, they might reveal the location of the treasure.</p>
+				</div><div id="105" class="room">
+				<p><strong>105) An Abandoned Guard Room:</strong> This room is devoid of contents, but it appears to have been once used as a guard room. On the west wall, to the south of the bars, there is a series of three levers. Pulling down on one of them will raise the bars in one of the left set of cells for Room 106. The lever that is farthest south of the bars will open gate A and so on. To the north of the bars on the same wall there is another set of 4 levers. The lever that is farthest north from the bars is down already and it will be visible that the gate in Room 106D is up. The lever closest to the bars will open the gate into Room 116 from Room 106.</p>
+				</div><div id="106" class="room">
+				<p><strong>106) Gladiatorial Cells:</strong> In these cells the combatants in ancient gladiatorial contests were held. Now they are empty except for small rats and spiders. The floor is covered with ancient straw. The gates are all down except for Room D which is up. The doors to Room 116 are closed. The cell gates are controlled by levers in Room 1 05.</p>
+				</div><div id="107" class="room">
+				<p><strong>107-114) Ancient Animal Holding Cells:</strong> These barred rooms were once used to keep the animals for gladiatorial combat. Various types of creatures were once kept in these rooms, but. none now remain. Only three of these rooms contain anything at all and they are listed below:</p>
+				</div><div id="108" class="room">
+				<p><strong>108) Minotaur Lair I:</strong> In this cell are a Minotaur Cow and her 2 Calves. The Cow is AC: 6, Move: 12, HD: 5, Damage: Butt for 2-8, Bite for 1-3 or Mace for 1-8, HP: 26. The two Calves are AC: 6, Move: 9, HD: ½, Damage: nil, HP: 3, 3. The Calves are only a week or so old. There are 600 GP in a wooden chest against the south wall.</p>
+				</div><div id="111" class="room">
+				<p><strong>111) Minotaur Lair II:</strong> This lair also contains a Minotaur Cow, however, she is older and past child bearing. She has above average intelligence for a Minotaur. Her name is Bova, AC:7, Move: 6, HD: 5, Damage: Butt for 2-5, Bite for 1-2, no weapon, Align: CN. She speaks Gnollic, Minotaur and Tribesman. The old lady is partially blind and if attacked she will not try to defend herself. Her grandson is the Minotaur King.</p>
+				</div><div id="112" class="room">
+				<p><strong>112) The Treasure Trove of the Minotaur King:</strong> In this room there will always be a large Minotaur and a magic-using Dog Brother, guarding the Kings treasure. The Minotaur, Thundahuuf, AC: 6, Move: 12, HD: 6, Damage: Battle Axe for 1-12, Butt for 2-8, and Bite for 1-3, HP: 40. The Dog Brother, Woofworth, AC: 6, Move: 12, HD: 4, Damage: Bite for 1-4 or two Daggers for 1-4 each, HP: 19, spells: <em>Charm Person (x3), Magic Missile, Web (x2), Haste</em>. The treasure consists of a large box of stone containing 2000 SP and 5000 GP. Buried under the coins is a locked iron box of ingenious design and ornately wrought, studded with 4 diamonds and valued at 4000 GP. This box may be opened, but doing so will release a creature exactly like the one guarding the chests in Room 33 (see 33 for details on the Disembodied Mouth). Inside the iron box is the following: a Ring of Contrariness, a Marble Elephant (the miscellaneous magic item), a Sword Sheath formed of thin plates of citrine valued at 1700 GP and a set of gold, silver and pink coral Beads worth 2900 GP. High, on an
+				apparently empty shelf in the southeast corner of the room, is an invisible box. Not even the Minotaur King and his minions suspect its presence. Inside the box are two items, a glowing, green glass globe and a strange contraption made of brass that appears to be a box with a hand pointing upward on its top and a hand crank on its side. The glass globe is the powering element for the teleporter in Room 89. If it is broken or taken out of the palace, the glow will fade and the teleporter will cease to
+				function, neither sending nor recieving. The brass box is a summoning agent for the basket that lower from Room 126. By turning the crank and pointing the hand skyward, a small, magical electric force will be generated which will cause the basket to descend to the floor of the 3rd level. The crank must be turned continuously until the basket reaches the ground. It will only work outside of the palace. It will take approximately 1 full turn for the basket to descend and at least a melee round for it to be visible below the mists which blanket the ceiling of the cavern. These two items were hidden here by the last remaining Humans in the palace when the Beasts took over 1100 years ago.</p>
+				</div><div id="115" class="room">
+				<p><strong>115) Torturers Treasure:</strong> This small, roughly carved room has a chimney of shaft leading up from its low (6) ceiling to Room 93. Buried under a tile in the floor and covered with dirt is the treasure that the torturers in Room 1 04 have extorted from their victims. The treasure consists of 200 SP, a Silver Amulet worth 50 GP and a Cloak woven of mithril thread/wire and studded with bloodstones valued at 2300 GP.</p>
+				</div><div id="116" class="room">
+				<p><strong>116) An Ancient Arena:</strong> This large room has a sand covered floor. The distance from floor to ceiling is 40. The open section along the south wall originally housed ornate box seats and elegant draperies. All that remains are a few shattered statues and some ratty shreds of faded fabric. The distance from the sand floor of the arena to the balcony is 20. There is a 25% chance that a band of Lizard Men will be in here practicing with swords. If so there will be 6 Lizard Men, AC: 4, Move: 6, HD: 2 +
+				1, Damage: 1 - 8 with Sword, HP: 9 (x3), 13, 11 (x2). The Lizard Men will be at -1 hit probability because of unfamiliarity with their weapons.</p>
+				</div><div id="117" class="room">
+				<p><strong>117) The Lost Escape Tubes:</strong> his is another secret device whose purpose and knowledge of existence was lost in the Beast Man coup over 1100 years previous. Located under the roots of Tree 61 is a rusted bronze trap door. It is covered by several inches of sod and dirt. If the dirt is moved, a 5 square, verdigrised bronze door will be visible. This must be pried open to reveal a 1 0 drop to a 1 0 square
+				room with a stair leading down out of the south side. The stair opens up on a large circular room with a 30 ceiling. There will be roots hanging down from the ceiling. The prepossessing item in the room though, is a polished bronze dome in the center of the room. It is 30 in diameter. Rising up from the center of the dome is a 1 0 diameter transparent pillar that seems to be filled with gurgling water, rising upward. Located at 8 points about the circumference of the dome are openings with
+				hinged doors on them. If these doors are climbed into and sealed from the inside, it will form eight small can like containers which will then be released into the rising water and be carried up to the 2nd level to rise up in Area 34 and float down stream. If passage is not stopped by the spiderweb at 32, it definitely will be stopped by the bridge at 28. This whole complex was designed as a last resort escape route but was never used.</p>
+				</div>
+				
+			</div>
+			<div id="separator" ></div>
+			<div id="second" >
+				<div id="top-button-row">
+					<button class="top-button" onclick="window.location.href='CoT-0-viewer.html';">Surface</button>
+					<button class="top-button" onclick="window.location.href='CoT-1-viewer.html';">Level 1</button>
+					<button class="top-button" onclick="window.location.href='CoT-2-viewer.html';">Level 2</button>
+					<button class="top-button" onclick="window.location.href='CoT-3a-viewer.html';">Level 3a</button>
+					<button class="top-button" onclick="window.location.href='CoT-3-viewer.html';">Level 3</button>	
+					<button class="top-button" onclick="window.location.href='CoT-4-viewer.html';"><strong>Level 4</strong></button>
+				</div>
+				<div id="zoom-buttons">
+					<button class="zoom-button" onclick="zoomIn()"><strong>+</strong></button>
+					<button class="zoom-button" onclick="zoomOut()"><strong>-</strong></button>
+				</div>
+				<div id="zoom-buttons">
+					<button class="zoom-button" onclick="zoomIn()"><strong>+</strong></button>
+					<button class="zoom-button" onclick="zoomOut()"><strong>-</strong></button>
+				</div>
+				
+				<svg id="map_svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 998 1308">
+				  <image width="998" height="1308" xlink:href="CoT-4.JPG"></image> <a xlink:href="#94">
+					<rect x="361" y="66" fill="#fff" opacity="0" width="233" height="146" onclick="scrollToEntry('94')"></rect>
+				  </a><a xlink:href="#95">
+					<rect x="424" y="270" fill="#fff" opacity="0" width="100" height="100" onclick="scrollToEntry('95')"></rect>
+				  </a><a xlink:href="#96">
+					<rect x="156" y="346" fill="#fff" opacity="0" width="100" height="50" onclick="scrollToEntry('96')"></rect>
+				  </a><a xlink:href="#97">
+					<rect x="104" y="400" fill="#fff" opacity="0" width="204" height="187" onclick="scrollToEntry('97')"></rect>
+				  </a><a xlink:href="#98">
+					<rect x="558" y="463" fill="#fff" opacity="0" width="74" height="64" onclick="scrollToEntry('98')"></rect>
+				  </a><a xlink:href="#99">
+					<rect x="142" y="610" fill="#fff" opacity="0" width="62" height="79" onclick="scrollToEntry('99')"></rect>
+				  </a><a xlink:href="#100">
+					<rect x="210" y="644" fill="#fff" opacity="0" width="61" height="50" onclick="scrollToEntry('100')"></rect>
+				  </a><a xlink:href="#101">
+					<rect x="461" y="564" fill="#fff" opacity="0" width="50" height="90" onclick="scrollToEntry('101')"></rect>
+				  </a><a xlink:href="#103">
+					<rect x="107" y="755" fill="#fff" opacity="0" width="229" height="67" onclick="scrollToEntry('103')"></rect>
+				  </a><a xlink:href="#104">
+					<rect x="556" y="645" fill="#fff" opacity="0" width="100" height="100" onclick="scrollToEntry('104')"></rect>
+				  </a><a xlink:href="#105">
+					<rect x="720" y="611" fill="#fff" opacity="0" width="100" height="50" onclick="scrollToEntry('105')"></rect>
+				  </a><a xlink:href="#106">
+					<rect x="718" y="527" fill="#fff" opacity="0" width="100" height="100" onclick="scrollToEntry('106')"></rect>
+				  </a><a xlink:href="#107">
+					<rect x="834" y="595" fill="#fff" opacity="0" width="115" height="192" onclick="scrollToEntry('107')"></rect>
+				  </a><a xlink:href="#107">
+					<rect x="772" y="665" fill="#fff" opacity="0" width="100" height="50" onclick="scrollToEntry('107')"></rect>
+				  </a><a xlink:href="#108">
+					<rect x="766" y="722" fill="#fff" opacity="0" width="50" height="69" onclick="scrollToEntry('108')"></rect>
+				  </a><a xlink:href="#111">
+					<rect x="835" y="740" fill="#fff" opacity="0" width="50" height="50" onclick="scrollToEntry('111')"></rect>
+				  </a><a xlink:href="#112">
+					<rect x="896" y="592" fill="#fff" opacity="0" width="50" height="71" onclick="scrollToEntry('112)"></rect>
+				  </a><a xlink:href="#115">
+					<rect x="651" y="489" fill="#fff" opacity="0" width="50" height="84" onclick="scrollToEntry('115')"></rect>
+				  </a><a xlink:href="#116">
+					<rect x="697" y="269" fill="#fff" opacity="0" width="154" height="208" onclick="scrollToEntry('116')"></rect>
+				  </a><a xlink:href="#116">
+					<rect x="651" y="319" fill="#fff" opacity="0" width="235" height="129" onclick="scrollToEntry('116')"></rect>
+				  </a><a xlink:href="#117">
+					<rect x="119" y="1065" fill="#fff" opacity="0" width="204" height="178" onclick="scrollToEntry('117')"></rect>
+				  </a><a xlink:href="CoT-3-viewer.html#76">
+					<rect x="193" y="167" fill="#fff" opacity="0" width="160" height="58"></rect>
+				  </a><a xlink:href="CoT-3-viewer.html#86">
+					<rect x="635" y="150" fill="#fff" opacity="0" width="236" height="56"></rect>
+				  </a><a xlink:href="CoT-3-viewer.html#61">
+					<rect x="218" y="930" fill="#fff" opacity="0" width="50" height="124"></rect>
+				  </a>
+				</svg>
+				
+			</div>
+		</div>
+		<script>
+			
+			function zoomIn() {
+				var e = document.getElementById('map_svg');
+				var width = e.style.width;
+				if (width == '') {
+					width = '110%';
+				}
+				width.replace("%", "");
+				width_int = parseInt(width);
+				width_int = width_int + 10;
+				e.style.width = width_int.toString() + '%';
+				
+			}
+
+			function zoomOut() {
+				var e = document.getElementById('map_svg');
+				var width = e.style.width;
+				if (width == '') {
+					width = '110%';
+				}
+				width.replace("%", "");
+				width_int = parseInt(width);
+				width_int = width_int - 10;
+				e.style.width = width_int.toString() + '%';
+				
+			}
+
+			function scrollToEntry(anchor) {
+				var e = document.getElementById(anchor);
+				rooms = document.getElementsByClassName('room');
+				for (let i = 0; i <  rooms.length; i++) {
+					rooms[i].style.background = "mintcream";
+				}
+				e.style.background = "palegoldenrod";
+			}
+	
+			// A function is used for dragging and moving
+			function dragElement(element, direction)
+			{
+				var   md; // remember mouse down info
+				const first  = document.getElementById("first");
+				const second = document.getElementById("second");
+
+				element.onmousedown = onMouseDown;
+
+				function onMouseDown(e)
+				{
+					//console.log("mouse down: " + e.clientX);
+					md = {e,
+						  offsetLeft:  element.offsetLeft,
+						  offsetTop:   element.offsetTop,
+						  firstWidth:  first.offsetWidth,
+						  secondWidth: second.offsetWidth
+						 };
+
+					document.onmousemove = onMouseMove;
+					document.onmouseup = () => {
+						//console.log("mouse up");
+						document.onmousemove = document.onmouseup = null;
+					}
+				}
+
+				function onMouseMove(e)
+				{
+					//console.log("mouse move: " + e.clientX);
+					var delta = {x: e.clientX - md.e.clientX,
+								 y: e.clientY - md.e.clientY};
+
+					if (direction === "H" ) // Horizontal
+					{
+						// Prevent negative-sized elements
+						delta.x = Math.min(Math.max(delta.x, -md.firstWidth),
+								   md.secondWidth);
+
+						element.style.left = md.offsetLeft + delta.x + "px";
+						first.style.width = (md.firstWidth + delta.x) + "px";
+						second.style.width = (md.secondWidth - delta.x) + "px";
+					}
+				}
+			}
+
+			dragElement( document.getElementById("separator"), "H" );
+
+		</script>
+	</body>
+</html>

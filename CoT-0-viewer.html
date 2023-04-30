@@ -1,0 +1,225 @@
+<html>
+	<head>
+		<title>Surface - Caverns of Thracia</title>
+		<style>
+
+.splitter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#separator {
+    cursor: col-resize;
+    background-color: #aaa;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='30'><path d='M2 0 v30 M5 0 v30 M8 0 v30' fill='none' stroke='black'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+    height: 100%;
+
+    /* Prevent the browser's built-in drag from interfering */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#first {
+    background-color: #dde;
+    width: 30%;
+    height: 100%;
+    min-width: 10px;
+	overflow: scroll;
+}
+
+#second {
+    background-color: #fff;
+    width: 70%;
+    height: 100%;
+    min-width: 10px;
+	overflow: scroll
+}
+
+#top-button-row {
+	position: fixed;
+	
+}
+
+#zoom-buttons {
+	position: fixed;
+	right: 10px;
+	
+}
+
+.top-button {
+	background-color: #5081a9;
+	border: none;
+	color: white;
+	padding: 8px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.zoom-button {
+	background-color: #5081a9;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.room {
+	background-color: mintcream;
+}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="splitter">
+			<div id="first">
+				
+				<h1>The Lost City of Thracia</h1>
+				<h3>Fantasy game aid by Jennell Jaquays</h3>
+				<p><strong>Note:</strong> The tree symbols on the map represent actual trees. There are many, many more trees in the
+				jungle, but to indicate them all would clutter the map severely. However, on the building foundations
+				themselves, there are no more trees than indicated.
+				<strong>Note II:</strong> The surface of the street is cobblestone and is well choked with thick grass, at least waist high.</p>
+				<div id="a" class="room">
+				<p>A) <strong>Entrance to Room 1:</strong> At this point the stairs descend down to level one, Room 1. There is a 60% chance that a Gnoll patrol will be guarding this entrance. (Use GNOLL PATROL Tables in Random Encounter section to randomly determine a patrol). There is an additional 50% chance that half the patrol will be in ambush up in the trees. The stairs come up onto a weathered pedestle that was once the base of a temple. There is rubble lying about on the surface and trees are growing up around the edge of the pedestle and out of cracks in it. The pedestle is 10 higher than the surrounding terrain.</p>
+				</div><div id="b" class="room">
+				<p>B) <strong>The Tribesmen's Secret Entrance:</strong> This set of stairs leads down to 18 on the first level map. There will be a band of Tribesmen lurking about here (see Random Encounter Tables, Level One, No. 4, Band of Bold Tribesmen. They will be the equivalent of Band 2, but with the following Hit Points: 8, 6, 5, 4, 7, 9). These characters will definitely attack from ambush.</p>
+				</div><div id="c" class="room">
+				<p>C) <strong>The Remnants of an Ancient Building:</strong> There is ·little left besides the foundation and a couple of walls. There is a 30% chance of a Random Encounter at this point. Roll on the 2nd level table. A search of the premises will reveal a tablet written in Dwarvish. If a member of the party can read it, it will state that the writer has found the location of the secret entrance into the caverns below. The building described will be A squat, dark building constructed of black stone. This is the building that houses the Tribesmens secret entrance (B).</p>
+				</div><div id="d" class="room">
+				<p>D) <strong>Another Building Foundation:</strong> This one is 5' higher than the surrounding area and juts out into the swamp. Standing at the west end of it will cause the character(s) to be hit by a volley of 4 - 12 darts cast by Lizard Men (see E below).</p>
+				</div><div id="e" class="room">
+				<p>E) <strong>A Hunting Party:</strong> Slurping quietly about in the swamp is a patrol of Lizard Men (determine a random Lizard Men Patrol on the LIZARD MEN PATROL Tables under the Random Encounter section). If undetected, they will attack with surprise and return to beneath the waters, seeking at all times to ambush without actually joining combat with intruders.</p>
+				</div><div id="f" class="room">
+				<p>F) <strong>A Hole in the Ground:</strong> This is a 5' diameter hole that lets sunlight down into the cavern below and at high noon is focused directly on the semicircular area of 23. The drop is 65 for 6d6 +2 damage. If the character falling survives and does not hang on there is an additional 20% chance that he or she will slip off and fall an additional 50 to land on the east bank of the river, taking another 4d6 +2 damage.</p>
+				</div>
+				
+			</div>
+			<div id="separator" ></div>
+			<div id="second" >
+				<div id="top-button-row">
+					<button class="top-button" onclick="window.location.href='CoT-0-viewer.html';"><strong>Surface<strong></button>
+					<button class="top-button" onclick="window.location.href='CoT-1-viewer.html';">Level 1</button>
+					<button class="top-button" onclick="window.location.href='CoT-2-viewer.html';">Level 2</button>
+					<button class="top-button" onclick="window.location.href='CoT-3a-viewer.html';">Level 3a</button>
+					<button class="top-button" onclick="window.location.href='CoT-3-viewer.html';">Level 3</button>	
+					<button class="top-button" onclick="window.location.href='CoT-4-viewer.html';">Level 4</button>
+				</div>
+				
+				<div id="zoom-buttons">
+					<button class="zoom-button" onclick="zoomIn()"><strong>+</strong></button>
+					<button class="zoom-button" onclick="zoomOut()"><strong>-</strong></button>
+				</div>
+				
+				<svg id = "map_svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 861 1114">
+				  <image width="861" height="1114" xlink:href="CoT-0.JPG"></image> <a xlink:href="#a">
+					<rect x="370" y="608" fill="#fff" opacity="0" width="147" height="106" onclick="scrollToEntry('a')"></rect>
+				  </a><a xlink:href="#b">
+					<rect x="181" y="954" fill="#fff" opacity="0" width="100" height="100" onclick="scrollToEntry('b')"></rect>
+				  </a><a xlink:href="#c">
+					<rect x="377" y="164" fill="#fff" opacity="0" width="145" height="122" onclick="scrollToEntry('c')"></rect>
+				  </a><a xlink:href="#d">
+					<rect x="238" y="440" fill="#fff" opacity="0" width="183" height="79" onclick="scrollToEntry('d')"></rect>
+				  </a><a xlink:href="#e">
+					<rect x="17" y="294" fill="#fff" opacity="0" width="193" height="283" onclick="scrollToEntry('e')"></rect>
+				  </a><a xlink:href="#f">
+					<rect x="181" y="810" fill="#fff" opacity="0" width="50" height="66" onclick="scrollToEntry('f')"></rect>
+				  </a>
+				</svg>
+			</div>
+		</div>
+		<script>
+
+			function zoomIn() {
+				var e = document.getElementById('map_svg');
+				var width = e.style.width;
+				if (width == '') {
+					width = '110%';
+				}
+				width.replace("%", "");
+				width_int = parseInt(width);
+				width_int = width_int + 10;
+				e.style.width = width_int.toString() + '%';
+				
+			}
+
+			function zoomOut() {
+				var e = document.getElementById('map_svg');
+				var width = e.style.width;
+				if (width == '') {
+					width = '110%';
+				}
+				width.replace("%", "");
+				width_int = parseInt(width);
+				width_int = width_int - 10;
+				e.style.width = width_int.toString() + '%';
+				
+			}
+
+			function scrollToEntry(anchor) {
+				var e = document.getElementById(anchor);
+				rooms = document.getElementsByClassName('room');
+				for (let i = 0; i <  rooms.length; i++) {
+					rooms[i].style.background = "mintcream";
+				}
+				e.style.background = "palegoldenrod";
+			}
+	
+			// A function is used for dragging and moving
+			function dragElement(element, direction)
+			{
+				var   md; // remember mouse down info
+				const first  = document.getElementById("first");
+				const second = document.getElementById("second");
+
+				element.onmousedown = onMouseDown;
+
+				function onMouseDown(e)
+				{
+					//console.log("mouse down: " + e.clientX);
+					md = {e,
+						  offsetLeft:  element.offsetLeft,
+						  offsetTop:   element.offsetTop,
+						  firstWidth:  first.offsetWidth,
+						  secondWidth: second.offsetWidth
+						 };
+
+					document.onmousemove = onMouseMove;
+					document.onmouseup = () => {
+						//console.log("mouse up");
+						document.onmousemove = document.onmouseup = null;
+					}
+				}
+
+				function onMouseMove(e)
+				{
+					//console.log("mouse move: " + e.clientX);
+					var delta = {x: e.clientX - md.e.clientX,
+								 y: e.clientY - md.e.clientY};
+
+					if (direction === "H" ) // Horizontal
+					{
+						// Prevent negative-sized elements
+						delta.x = Math.min(Math.max(delta.x, -md.firstWidth),
+								   md.secondWidth);
+
+						element.style.left = md.offsetLeft + delta.x + "px";
+						first.style.width = (md.firstWidth + delta.x) + "px";
+						second.style.width = (md.secondWidth - delta.x) + "px";
+					}
+				}
+			}
+
+			dragElement( document.getElementById("separator"), "H" );
+
+		</script>
+	</body>
+</html>
